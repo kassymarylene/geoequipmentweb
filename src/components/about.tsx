@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import React from 'react';
 
 export default function About({
   cardTitle1,
@@ -8,6 +6,9 @@ export default function About({
   cardSubText1,
   cardSubText2,
   cardSubText3,
+}: {
+  cardTitle1: string, cardTitle2: string, cardTitle3: string,
+  cardSubText1: string, cardSubText2: string, cardSubText3: string
 }) {
   return (
     <div id="about-container" className="relative p-4 mb-4">

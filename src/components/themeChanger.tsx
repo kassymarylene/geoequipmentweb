@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { RiMoonLine, RiSunLine } from 'react-icons/ri';
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
+import { RiMoonLine, RiSunLine } from 'react-icons/ri';
 
 const ThemeChanger = () => {
   const [mounted, setMounted] = useState(false);
@@ -18,7 +18,6 @@ const ThemeChanger = () => {
   return (
     <>
       <button
-        onChange={(e) => setTheme(e.target.value)}
         className="w-8 h-8 flex items-center justify-center bg-transparent rounded-2xl dark:bg-transparent ease-in transition-all duration-300 focus:outline-none"
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         aria-label="Toggle Dark Mode"

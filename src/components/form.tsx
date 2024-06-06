@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import usernameIcon from '../assets/icons/Icon.png';
 import callIcon from '../assets/icons/callIcon.png';
 import emailIcon from '../assets/icons/email.png';
 import messageIcon from '../assets/icons/message.png';
 
+import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
-import { yupResolver } from '@hookform/resolvers/yup';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -31,7 +31,7 @@ const Form = () => {
     reset,
   } = useForm({ resolver: yupResolver(schema) });
   const [submitting, setSubmitting] = useState(false);
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: any) => {
     try {
       setSubmitting(true);
       console.log(data);

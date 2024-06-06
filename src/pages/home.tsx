@@ -16,7 +16,7 @@ const HomePage = () => {
   const [showButton, setShowButton] = useState(false);
 
   const handleScrollToTop = () => {
-    window.scrollTo({ top: (0, 0), behavior: 'smooth' });
+    window.scrollTo({ top: (0), behavior: 'smooth' });
   };
 
   useEffect(() => {

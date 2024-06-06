@@ -1,8 +1,7 @@
-import Image from 'next/image';
-import React from 'react';
+import Image, { StaticImageData } from 'next/image';
 import eyeIcon from '../assets/icons/eye.png';
 
-const Card = ({ imageSrc, title, price }) => {
+const Card = ({ imageSrc, title, price }: {imageSrc:StaticImageData, title:string, price: string}) => {
   return (
     <div className="w-[350px] h-[400px] hover:scale-105 ease-in duration-200 mx-auto bg-white rounded-xl shadow-md overflow-hidden dark:bg-slate-700">
       <div className="flex flex-col items-start">
