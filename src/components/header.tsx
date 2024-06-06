@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <div
       style={{ background: `${headerColor}` }}
-      className=" backdrop-blur-xl bg-white/30 fixed top-0 left-0 w-full h-20 shadow-xl flex justify-between items-center z-40 ease-in duration-300"
+      className=" backdrop-blur-xl bg-lime-950/100 fixed top-0 left-0 w-full h-20 shadow-xl flex justify-between items-center z-40 ease-in duration-300"
     >
       {/* Menu + Name */}
 
@@ -57,19 +57,19 @@ const Header = () => {
         className="text-sm font-bold hidden sm:flex
       "
       >
-        <li className=" p-4 hover:text-orange-500">
+        <li className=" p-4 hover:text-orange-500 text-lg">
           <Link href="#about-container">About</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500">
+        <li className=" p-4 hover:text-orange-500 text-lg">
           <Link href="#services">Services</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500">
+        <li className=" p-4 hover:text-orange-500 text-lg">
           <Link href="#reviews">Reviews</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500">
+        <li className=" p-4 hover:text-orange-500 text-lg">
           <Link href="#contact">Team</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500">
+        <li className=" p-4 hover:text-orange-500 text-lg">
           <Link href="#contact">Contact</Link>
         </li>
       </ul>

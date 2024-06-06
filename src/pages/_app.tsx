@@ -9,17 +9,17 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
-    <>
+  
       <NextIntlClientProvider
       locale={router.locale}
       messages={pageProps.messages}
       >
-        <ThemeProvider enableSystem={true} attribute="class">
+        <ThemeProvider defaultTheme="dark" enableSystem={true} attribute="class">
         <Header />
         <Component {...pageProps} />
         </ThemeProvider>
     </NextIntlClientProvider>
       
-    </>
+   
   );
 }

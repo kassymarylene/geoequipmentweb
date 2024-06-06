@@ -1,14 +1,13 @@
+
 import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 
+import Team from '@/components/team';
 import scrollIcon from '../assets/icons/topArrowIcon.png';
 import About from '../components/about';
-import Deals from '../components/deals';
 import Form from '../components/form';
-import Review from '../components/review';
-import Services from '../components/services';
 
 import Footer from '@/components/footer';
 import Hero from '@/components/hero';
@@ -59,9 +58,12 @@ const HomePage = () => {
           cardTitle3="10,000"
           cardSubText3="transactions"
         />
-        <Services />
-        <Deals />
-        <Review />
+      
+        <Team/>
+      
+        {/* <Services /> */}
+        {/* <Deals /> */}
+        {/* <Review /> */}
         {/* <Insta /> */}
         <Form />
         <Footer />
