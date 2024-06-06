@@ -15,7 +15,7 @@ const Hero = ({ address, phone, email }: any) => {
     
       <section className="flex flex-col w-full h-screen ">
         
-        <div className=" absolute h-96 sm:h-96 xl:h-lvh 2xl:h-dvh w-full  bg-no-repeat rounded-b-4xl">
+        <div className=" absolute z-10 h-96 sm:h-96 xl:h-lvh 2xl:h-dvh w-full  bg-no-repeat rounded-b-4xl">
 
       <Carousel >
         <img src="/images/geo1.jpg" alt="..." />
