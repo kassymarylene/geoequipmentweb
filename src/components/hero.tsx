@@ -32,13 +32,13 @@ const Hero = ({ address, phone, email }: any) => {
         <div className="relative h-screen text-center flex flex-col justify-center items-center">
           <h1 className="font-normal text-7xl text-center mt-24 text-white capitalize">
             ETS GEO-EQUIPEMENT CONSULTANT COVERS
-            <br /> REAL STATE 
-                   EARTH CONSTRUCTION EQUIPMENT RENTING AND SELLING
-                   CONTRUCTION
-                   NEGOTIATION
-                   STUDIES
-                   GENERAL COMMERCE
-                   
+            <br /> REAL STATE .
+                   EARTH CONSTRUCTION EQUIPMENT RENTING AND SELLING.
+                   CONTRUCTION,
+                   NEGOTIATION,
+                   STUDIES.
+                   GENERAL COMMERCE.
+
           </h1>
          
          
