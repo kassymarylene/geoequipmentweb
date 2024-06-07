@@ -1,4 +1,5 @@
 
+import Services from '@/components/services';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -61,7 +62,7 @@ const HomePage = () => {
       
         <Team/>
       
-        {/* <Services /> */}
+        <Services />
         {/* <Deals /> */}
         {/* <Review /> */}
         {/* <Insta /> */}

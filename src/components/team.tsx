@@ -3,7 +3,7 @@ import { Card } from "flowbite-react";
 const Team = () => {
 
     return (
-          <section className="bg-white dark:bg-gray-900">
+          <section id="team" className="bg-white dark:bg-gray-900">
     <div className="container px-6 py-10 mx-auto">
         <div className="xl:flex xl:items-center xL:-mx-4">
             <div className="xl:w-1/2 xl:mx-4">
@@ -19,10 +19,10 @@ const Team = () => {
                 <Card
       className="max-w-sm"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+      imgSrc="/images/boss_ceo.jpg"
     >
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
+        AYONGABA Francios AGWENAM
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
         Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.

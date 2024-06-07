@@ -43,7 +43,10 @@ const Header = () => {
             style={{ color: `${headerText}` }}
             className="py-2 text-2xl font-bold hover:text-orange-500"
           >
-            Geo-Consultancy
+            <p>
+                Geo-Equipment <br/>
+            <span>Consultant Cameroon</span>
+          </p>
           </h1>
         </Link>
       </div>
@@ -64,10 +67,7 @@ const Header = () => {
           <Link href="#services">Services</Link>
         </li>
         <li className=" p-4 hover:text-orange-500 text-lg">
-          <Link href="#reviews">Reviews</Link>
-        </li>
-        <li className=" p-4 hover:text-orange-500 text-lg">
-          <Link href="#contact">Team</Link>
+          <Link href="#team">Team</Link>
         </li>
         <li className=" p-4 hover:text-orange-500 text-lg">
           <Link href="#contact">Contact</Link>
