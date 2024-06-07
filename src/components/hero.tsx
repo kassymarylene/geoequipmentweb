@@ -38,6 +38,7 @@ const Hero = ({ address, phone, email }: any) => {
                    NEGOTIATION
                    STUDIES
                    GENERAL COMMERCE
+                   
           </h1>
          
          
