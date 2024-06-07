@@ -47,7 +47,6 @@ const Header = () => {
             <p>
                 Geo-Equipment  <br/>
                 <span>Consultant Cameroon</span>  
-                
           </p>
           </h1>
         </Link>
