@@ -45,10 +45,9 @@ const Header = () => {
             className="py-2 text-2xl font-bold hover:text-orange-500"
           >
             <p>
-                Geo-Equipment Consultant Cameroon <br/>
-                <span>www.geoequipcam.com</span>  
-                <span>Email: geoequip2014@gmail.com</span>
-                <span>Facebook: Geo-equipment consultant CMR</span>
+                Geo-Equipment  <br/>
+                <span>Consultant Cameroon</span>  
+                
           </p>
           </h1>
         </Link>
