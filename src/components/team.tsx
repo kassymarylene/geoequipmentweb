@@ -10,7 +10,7 @@ const Team = () => {
                 <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Our Team</h1>
 
                 <p className="max-w-2xl mt-4 text-gray-500 dark:text-gray-300">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+                    We have 17 experts in our team avaible to serve you 24H/7.
                 </p>
             </div>
 
@@ -25,7 +25,8 @@ const Team = () => {
         AYONGABA Francios AGWENAM
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+         The CEO of GOE-EQUIPMENT CONSULTANT  <br/>a yough business man and public work enginer, 
+         father of 3 children he lives at NSAM YAOUDE CAMEROON <br/>and has several activity at under his control.
       </p>
     </Card>
 

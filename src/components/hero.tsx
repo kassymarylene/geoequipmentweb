@@ -15,9 +15,9 @@ const Hero = ({ address, phone, email }: any) => {
     
       <section className="flex flex-col w-full h-screen ">
         
-        <div className=" absolute  h-96 sm:h-96 xl:h-lvh 2xl:h-dvh w-full  bg-no-repeat rounded-b-4xl">
+        <div className=" relative  h-96 sm:h-96 xl:h-lvh 2xl:h-dvh w-full  bg-no-repeat rounded-b-4xl">
 
-      <Carousel >
+      <Carousel className="" >
         <img src="/images/geo1.jpg" alt="..." />
         <img src="/images/geo2.jpg" alt="..." />
         <img src="/images/geo3.jpg" alt="..." />
@@ -28,19 +28,20 @@ const Hero = ({ address, phone, email }: any) => {
       </Carousel>
     </div>
        
-      <div className="w-full h-screen relative ">
-        <div className="relative h-screen text-center flex flex-col justify-center items-center">
-          <h1 className="font-normal text-7xl text-center mt-24 text-white capitalize">
-            ETS GEO-EQUIPEMENT CONSULTANT COVERS
-            <br /> 
-              <span>REAL STATE</span>
-              <span>EARTH CONSTRUCTION EQUIPMENT RENTING AND SELLING</span>
-              <span>CONTRUCTION</span>
-              <span>NEGOTIATION</span>
-               <span>STUDIES</span>
-              <span>GENERAL COMMERCE</span> 
-
-          </h1>
+      <div className="w-full absolute h-screen ">
+        <div className=" h-screen text-center flex flex-col justify-center items-center">
+        <div className="">
+    <h1 className="font-medium text-2xl text-center mt-24 capitalize">
+        ETS GEO-EQUIPEMENT CONSULTANT COVERS
+        <br /> 
+        <span className="block mt-4text-gray-800	">Real State</span>
+        <span className="block mt-2">Earth Construction Equipment Renting and Selling</span>
+        <span className="block mt-2">Construction</span>
+        <span className="block mt-2">Negotiation</span>
+        <span className="block mt-2">Studies</span>
+        <span className="block mt-2">General Commerce</span>
+    </h1>
+</div>
          
          
         </div>

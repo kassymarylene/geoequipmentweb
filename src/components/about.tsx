@@ -27,18 +27,20 @@ export default function About({
             OUR STORY
           </p>
           <p className="text-4xl text-blue-900 font-bold text-center z-20 relative mt-16 dark:text-gray-300">
-            We Will Find the Best Option
+            ETS GEO-EQUIPMENT CONSULTANT
           </p>
         </div>
       </div>
 
       <div className="relative justify-center items-center">
-        <p className="font-medium text-base text-center mt-20  text-bluePText">
-          Real estate is &quot;property consisting of land and the buildings on
-          it, along with its natural resources such as crops,
-          <br /> minerals or water, immovable property of this nature; an
-          interest vested in this (also) an item of real property,
-          <br /> (more generally) buildings or housing in general.
+        <p className="font-medium text-base text-center mt-20  text-whiteText">
+        is an Establissement base in Yaounde-Cameroon precily at entre famencam created in 2014 by AYONGABA FRANCOIS AGWENAM<br/> a yough business man and public work enginer 
+        a father of 3 children who live at NSAM YAOUDE CAMEROON <br/>and has several activity at under his control in which the most recent ones is 
+        CEO of GEO-EQUIPMENT <br/>a compagny which turn on 20-50 Billions and covers 17 workers.
+       <br/> we make expart available to discus with you 24h/7 on any of our service you need online and offline. 
+       <br/>we are open 24H/7 from 7H30-17H30 except Saturday:8H30-13H30 
+       contact us on <br/>CALL:677355166/680941692/656169787 <br/>Whatsapp:677355166/659796533/690462359/
+
         </p>
       </div>
 

@@ -30,8 +30,7 @@ const Services = () => {
         <p className="font-medium text-base text-center mt-20  text-bluePText">
           We have developed a unique space where you can work and create. We
           thought of everything to the smallest
-          <br /> detail. You will be able to conduct your business, conduct
-          meetings, meetings
+          <br /> detail. You will be ableand happy to conduct your business.
         </p>
       </div>
 
@@ -47,7 +46,7 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col mr-[60px] hover:scale-125  ease-in duration-200">
-          <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
+          <div className="bg-white h-[220px] w-[220px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image
               src={apartmentIcon}
               alt="apartment"
@@ -68,7 +67,7 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
-          <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
+          <div className="bg-white h-[220px] w-[220px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={warehouseIcon} alt="warehouse" className="w-10 h-10" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
             NEGOTIATION AND GENERAL COMMERCE
