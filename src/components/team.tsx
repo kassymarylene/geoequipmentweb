@@ -19,14 +19,14 @@ const Team = () => {
                 <Card
       className="max-w-sm"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc="/images/boss_ceo.jpg"
+      imgSrc="/images/geo23.jpeg"
     >
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        AYONGABA Francios AGWENAM
+       Mr AYONGABA Francios AGWENAM
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
-         The CEO of GOE-EQUIPMENT CONSULTANT  <br/>a yough business man and public work enginer, 
-         father of 3 children he lives at NSAM YAOUDE CAMEROON <br/>and has several activity at under his control.
+         The CEO of GOE-EQUIPMENT CONSULTANT  <br/>a young business man and public work engineer, 
+         father of 3 children he lives at ODZA YAOUNDE CAMEROON <br/>and has several activity under his control.
       </p>
     </Card>
 

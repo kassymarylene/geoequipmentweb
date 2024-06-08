@@ -54,9 +54,9 @@ const HomePage = () => {
         <About
           cardTitle1="10 years"
           cardSubText1="in business"
-          cardTitle2="20-50billion fcfa"
+          cardTitle2="20-500Million fcfa"
           cardSubText2="turnover"
-          cardTitle3="10,000"
+          cardTitle3="1000"
           cardSubText3="transactions"
         />
       

@@ -26,10 +26,11 @@ const Hero = ({ address, phone, email }: any) => {
         <img src="/images/geo6.jpg" alt="..." />
         <img src="/images/geo7.jpg" alt="..." />
         <img src="/images/geo11.jpeg" alt="..." />
-        <img src="/images/geo8.jpeg" alt="..." />
-        <img src="/images/geo9.jpeg" alt="..." />
-        <img src="/images/geo12.jpeg" alt="..." />
+        <img src="/images/geo24.jpeg" alt="..." />
+        <img src="/images/geo25.jpeg" alt="..." />
+        <img src="/images/geo30.jpeg" alt="..." />
         <img src="/images/geo19.jpeg" alt="..." />
+        <img src="/images/geo12.jpeg" alt="..." />
       </Carousel>
     </div>
        
@@ -41,8 +42,8 @@ const Hero = ({ address, phone, email }: any) => {
         <br /> 
         <span className="block mt-4text-gray-800	">Real State</span>
         <span className="block mt-2">Earth Construction Equipment Renting and Selling</span>
-        <span className="block mt-2">Construction</span>
-        <span className="block mt-2">Negotiation</span>
+        <span className="block mt-2">Constracts</span>
+        <span className="block mt-2">Negotiator</span>
         <span className="block mt-2">Studies</span>
         <span className="block mt-2">General Commerce</span>
     </h1>

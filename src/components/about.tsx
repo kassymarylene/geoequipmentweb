@@ -34,12 +34,12 @@ export default function About({
 
       <div className="relative justify-center items-center">
         <p className="font-medium text-base text-center mt-20  text-whiteText">
-        is an Establissement base in Yaounde-Cameroon precily at entre famencam created in 2014 by AYONGABA FRANCOIS AGWENAM<br/> a yough business man and public work enginer 
-        a father of 3 children who live at NSAM YAOUDE CAMEROON <br/>and has several activity at under his control in which the most recent ones is 
-        CEO of GEO-EQUIPMENT <br/>a compagny which turn on 20-50 Billions and covers 17 workers.
-       <br/> we make expart available to discus with you 24h/7 on any of our service you need online and offline. 
-       <br/>we are open 24H/7 from 7H30-17H30 except Saturday:8H30-13H30 
-       contact us on <br/>CALL:677355166/680941692/656169787 <br/>Whatsapp:677355166/659796533/690462359/
+        is an Establissement base in Yaounde-Cameroon precisely at entre phamarcam created in 2014 by AYONGABA FRANCOIS AGWENAM<br/> a young business man and public work engineer 
+        a father of 3 children who live at ODZA YAOUNDE CAMEROON <br/>and has several activity under his control in which the most recent ones is 
+        CEO of GEO-EQUIPMENT <br/>a compagny which turn on 20-500 Millions FCFA and covers 17 workers.
+       <br/> we make expert available to discuss with you 24h/7 on any of our services you need online and offline. 
+       <br/>we are open 24H/7 from 8H30-17H30 except Saturday:8H30-13H30 
+       contact us on <br/>CALL:656169787/680941692/678902625 <br/>Whatsapp:677355166/+4917659729775/690462359/678902625
 
         </p>
       </div>
