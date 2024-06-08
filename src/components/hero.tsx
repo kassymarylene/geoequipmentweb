@@ -25,6 +25,11 @@ const Hero = ({ address, phone, email }: any) => {
         <img src="/images/geo5.jpg" alt="..." />
         <img src="/images/geo6.jpg" alt="..." />
         <img src="/images/geo7.jpg" alt="..." />
+        <img src="/images/geo11.jpeg" alt="..." />
+        <img src="/images/geo8.jpeg" alt="..." />
+        <img src="/images/geo9.jpeg" alt="..." />
+        <img src="/images/geo12.jpeg" alt="..." />
+        <img src="/images/geo19.jpeg" alt="..." />
       </Carousel>
     </div>
        
