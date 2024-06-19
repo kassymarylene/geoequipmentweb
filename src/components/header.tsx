@@ -72,6 +72,9 @@ const Header = () => {
         <li className=" p-4 hover:text-orange-500 text-lg">
           <Link href="#contact">Contact</Link>
         </li>
+        <li className=" p-4 hover:text-orange-500 text-lg">
+          <Link href="#projects">Projects</Link>
+        </li>
       </ul>
 
       <p
@@ -80,9 +83,9 @@ const Header = () => {
       >
         Get In Touch
       </p>
-      <div className="mr-10">
+      {/* <div className="mr-10">
         <ThemeChanger />
-      </div>
+      </div> */}
 
       {/* Mobile hamburgerMenu */}
 
@@ -130,6 +133,7 @@ const Header = () => {
               Contact
             </Link>
           </li>
+          
         </ul>
       </div>
     </div>

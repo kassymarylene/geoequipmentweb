@@ -53,7 +53,7 @@ export default function About({
             {cardSubText1}
           </p>
         </div>
-        <div className="bg-white py-35 px-10 h-[160px] w-[350px] mr-[30px] flex flex-col justify-center items-center rounded-[10px] shadow-md mb-5 dark:bg-slate-700">
+        <div className="bg-white py-35 px-10 h-[160px]  mr-[30px] flex flex-col justify-center items-center rounded-[10px] shadow-md mb-5 dark:bg-slate-700">
           <p className="font-medium text-3xl leading-[50px] text-blueCardTitle capitalize dark:text-gray-100">
             {cardTitle2}
           </p>

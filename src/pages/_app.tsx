@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import Layout from "@/components/layout";
 import "@/styles/globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { ThemeProvider } from 'next-themes';
@@ -15,8 +16,10 @@ export default function App({ Component, pageProps }: AppProps) {
       messages={pageProps.messages}
       >
         <ThemeProvider defaultTheme="dark" enableSystem={true} attribute="class">
-        <Header />
+        <Layout>
         <Component {...pageProps} />
+        </Layout>
+       
         </ThemeProvider>
     </NextIntlClientProvider>
       

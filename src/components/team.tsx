@@ -17,7 +17,7 @@ const Team = () => {
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2">
                
                 <Card
-      className="max-w-sm"
+      className="max-w-lg w-lvw"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc="/images/geo23.jpeg"
     >

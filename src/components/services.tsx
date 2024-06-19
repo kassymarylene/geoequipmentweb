@@ -36,7 +36,8 @@ const Services = () => {
 
       {/* 5 icons and names of services */}
       <div className="grid grid-cols-2 sm:flex justify-center items-center mt-16 ml-[40px]">
-        <div className="flex flex-col justify-center items-center mr-[30px] sm:mr-[60px] sm:ml-[50px] hover:scale-125 ease-in duration-200">
+      <Link href="/realestate">
+      <div className="flex flex-col justify-center items-center mr-[30px] sm:mr-[60px] sm:ml-[50px] hover:scale-125 ease-in duration-200">
           <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={houseIcon} alt="house" className="w-11 h-10" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
@@ -44,6 +45,8 @@ const Services = () => {
             </p>
           </div>
         </div>
+      </Link>
+        
 
         <div className="flex flex-col mr-[60px] hover:scale-125  ease-in duration-200">
           <div className="bg-white h-[220px] w-[220px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">

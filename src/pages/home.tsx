@@ -1,40 +1,19 @@
 
 import Services from '@/components/services';
 import Head from 'next/head';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
 
 
 import Team from '@/components/team';
-import scrollIcon from '../assets/icons/topArrowIcon.png';
+
 import About from '../components/about';
 import Form from '../components/form';
 
 import Footer from '@/components/footer';
 import Hero from '@/components/hero';
+import Project from '@/components/project';
 
 const HomePage = () => {
-  const [showButton, setShowButton] = useState(false);
-
-  const handleScrollToTop = () => {
-    window.scrollTo({ top: (0), behavior: 'smooth' });
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.pageYOffset > 500) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  
 
   return (
     <>
@@ -44,7 +23,7 @@ const HomePage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="dark:bg-bgDark">
+      <div>
         <Hero
           address="225 S 1st St Brooklyn, NY 11211"
           phone="(929) 123-4567"
@@ -54,7 +33,7 @@ const HomePage = () => {
         <About
           cardTitle1="10 years"
           cardSubText1="in business"
-          cardTitle2="20-500Million fcfa"
+          cardTitle2="20-500 Million fcfa"
           cardSubText2="turnover"
           cardTitle3="1000"
           cardSubText3="transactions"
@@ -63,21 +42,12 @@ const HomePage = () => {
         <Team/>
       
         <Services />
+        <Project/>
         {/* <Deals /> */}
         {/* <Review /> */}
         {/* <Insta /> */}
         <Form />
-        <Footer />
-        {showButton && (
-          <div className="fixed bottom-24 right-10 z-50">
-            <button
-              onClick={handleScrollToTop}
-              className="bg-slate-100 rounded shadow-xl overflow-visible"
-            >
-              <Image src={scrollIcon} alt="scroll button" />
-            </button>
-          </div>
-        )}
+        
       </div>
     </>
   );
