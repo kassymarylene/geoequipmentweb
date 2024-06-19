@@ -33,35 +33,37 @@ const Project = () => {
         pagination={true}
         modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
-      >
+      >   
+         OUR VERIOUS PROJECTS      
         <SwiperSlide>
          <div>
-         <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+         <img src="geo5.jpg" />
          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img src="geo27.jpg" />
+           BARAGE
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src="geo28.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img src="geo16.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          <img src="geo50.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          <img src="geo51.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          <img src="geo55.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          <img src="geo53.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          <img src="geo52.jpg" />
         </SwiperSlide>
       </Swiper>
         </div>
