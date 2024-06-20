@@ -85,7 +85,7 @@ const Project = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white">
+    <div id="#projects" className="bg-white">
       <main>
         <div className="isolate overflow-hidden">
           <div className="flow-root bg-gray-900 py-16 sm:pt-32 lg:pb-0">
