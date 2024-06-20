@@ -4,11 +4,14 @@ import { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import ThemeChanger from './themeChanger';
 import { Span } from 'next/dist/trace';
+import { useRouter } from 'next/router';
 
 const Header = () => {
   const [header, setHeader] = useState(false);
   const [headerColor, setHeaderColor] = useState('transparent');
   const [headerText, setHeaderText] = useState('white');
+
+  const router = useRouter();
 
   const handleHeader = () => {
     setHeader(!header);
@@ -55,7 +58,8 @@ const Header = () => {
      
       {/* navbar Links */}
 
-      <ul
+      {router.pathname === '/' ? (
+        <ul
         style={{ color: `${headerText}` }}
         className="text-sm font-bold hidden sm:flex
       "
@@ -75,7 +79,18 @@ const Header = () => {
         <li className=" p-4 hover:text-orange-500 text-lg">
           <Link href="#projects">Projects</Link>
         </li>
+      </ul>) : (
+        <ul
+        style={{ color: `${headerText}` }}
+        className="text-sm font-bold hidden sm:flex
+      "
+      >
+        <li className=" p-4 hover:text-orange-500 text-lg">
+          <Link href="/">Home</Link>
+        </li>
+        
       </ul>
+      )}
 
       <p
         style={{ color: `${headerText}` }}

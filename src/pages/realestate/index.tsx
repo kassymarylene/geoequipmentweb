@@ -1,3 +1,5 @@
+import { useRouter } from "next/router"
+
   
 const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 
@@ -70,7 +72,8 @@ function classNames(...classes: any) {
 }
 
 export default function RealEstate() {
- 
+
+
 
   return (
     <div className="bg-gray-50">
