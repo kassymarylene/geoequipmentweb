@@ -5,29 +5,29 @@ const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 const products1 = [
   {
     id: 1,
-    name: 'Bigining of Bluiding',
+    name: 'BullDozer',
     href: '#',
-    price: '',
-    description: 'Step One',
-    imageSrc: '/images/geo8.jpeg',
+    price: '100.000FCFA/h',
+    description: '500.000FCFA/6d',
+    imageSrc: '/images/geo31.jpeg',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 2,
-    name: 'First Level and Pouring the Slab ',
+    name: 'BullDozer',
     href: '#',
-    price: '',
-    description: 'Step Two',
-    imageSrc: '/images/geo13.jpeg',
+    price: '100.000FCFA/h',
+    description: '500.000FCFA/6d',
+    imageSrc: '/images/geo48.jpeg',
     imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
   },
   {
     id: 3,
-    name: 'Starting Roofing',
+    name: 'Frond Wild Holder',
     href: '#',
-    price: '',
-    description: 'Step three',
-    imageSrc: '/images/geo57.jpeg',
+    price: '75000FCFA/h',
+    description: '',
+    imageSrc: '/images/geo50.jpeg',
     imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
   },
   // More products...
@@ -35,30 +35,30 @@ const products1 = [
 const products2 = [
   {
     id: 7,
-    name: 'The Inside',
+    name: 'Frond Wild Holder',
     href: '#',
-    price: '',
-    description: 'Step Four',
-    imageSrc: '/images/geo59.jpeg',
+    price: '75000FCFA/h',
+    description: '',
+    imageSrc: '/images/geo36.jpeg',
     imageAlt: 'Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.',
   },
   {
     id: 8,
-    name: 'Last Verification and Complition',
+    name: 'Compactor and Grader',
     href: '#',
-    price: '',
-    description: 'Step Five',
-    imageSrc: '/images/geo58.jpeg',
+    price: '75000FCFA/h',
+    description: '',
+    imageSrc: '/images/geo61.jpeg',
     imageAlt:
       'Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.',
   },
   {
     id: 9,
-    name: 'Handling Of Keys',
+    name: 'Compactor and Grader',
     href: '#',
-    price: '',
-    description: 'Step Six',
-    imageSrc: '/images/geo60.jpeg',
+    price: '75000FCFA/h',
+    description: '',
+    imageSrc: '/images/geo62.jpeg',
     imageAlt:
       'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
   },
@@ -82,14 +82,11 @@ export default function RentingSelling() {
         <main>
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="py-24 text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900">REAL STATE</h1>
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900">RENTING AND SELLING OF PUBLIC WORK EQUIPMENT</h1>
               <p className="mx-auto mt-4 max-w-3xl text-base text-gray-500">
-             we sell and buy lands in every area in cameroon.
-             we sign layout plans.
-             we develop lands that is we open roads,provide electricity and water.
-             we attract investors or buyer.
-             we solve administrative, judiciary and commercial land issues.
-             we advise you on how to make use of your land.
+              We rent and sell equipment for you Road clearing and construction, Land clearing such as BULLDOZER,
+              FROND WILD HOLDER,COMPACTOR AND GRADER
+              We also sell and rent houses and appartment.
 
               </p>
             </div>
