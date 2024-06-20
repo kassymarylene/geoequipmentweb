@@ -148,7 +148,7 @@ const Project = () => {
                       description: string;
                       href: string;
                     }) => (
-                      <SwiperSlide>
+                      <SwiperSlide key={item.imageSrc}>
                         <Card
                           className="max-w-sm"
                           imgAlt="Meaningful alt text for an image that is not purely decorative"
