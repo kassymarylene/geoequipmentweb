@@ -3,7 +3,6 @@ import Footer from "./footer";
 import Header from "./header";
 import Image from 'next/image';
 import scrollIcon from '../assets/icons/topArrowIcon.png';
-import { useRouter } from "next/router";
 
 
 export default function Layout({ children }: any) {

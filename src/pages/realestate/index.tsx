@@ -1,6 +1,4 @@
-import { useRouter } from "next/router"
 
-  
 const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 
 
