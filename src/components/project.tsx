@@ -33,37 +33,44 @@ const Project = () => {
         pagination={true}
         modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
-      >   
-         OUR VERIOUS PROJECTS      
+      >    OUR VERIOUS PROJECTS      
         <SwiperSlide>
          <div>
-         <img src="geo5.jpg" />
+         <img src="/images/geo5.jpg" />
+          LAND SURVEY
          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="geo27.jpg" />
-           BARAGE
+          <img src="/images/geo28.jpeg" />
+           TURNEL
         </SwiperSlide>
         <SwiperSlide>
-          <img src="geo28.jpg" />
+          <img src="/images/geo27.jpeg" />
+           TURNEL
         </SwiperSlide>
         <SwiperSlide>
-          <img src="geo16.jpg" />
+          <img src="/images/geo11.jpeg" />
+          PROJECT OUT OF COUNTRY
         </SwiperSlide>
         <SwiperSlide>
-          <img src="geo50.jpg" />
+          <img src="/images/geo50.jpeg" />
+          ROAD OPENING
         </SwiperSlide>
         <SwiperSlide>
-          <img src="geo51.jpg" />
+          <img src="/images/geo51.jpeg" />
+          LAND CLEARING
         </SwiperSlide>
         <SwiperSlide>
-          <img src="geo55.jpg" />
+          <img src="/images/geo55.jpeg" />
+          LAND SURVEY
         </SwiperSlide>
         <SwiperSlide>
-          <img src="geo53.jpg" />
+          <img src="/images/geo53.jpeg" />
+          ROAD CONSTRUCTION
         </SwiperSlide>
         <SwiperSlide>
-          <img src="geo52.jpg" />
+          <img src="/images/geo12.jpeg" />
+          HOUSE COMPLITION
         </SwiperSlide>
       </Swiper>
         </div>
