@@ -84,16 +84,36 @@ export default function RealEstate() {
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="py-24 text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900">REAL STATE</h1>
-              <p className="mx-auto mt-4 max-w-3xl text-base text-gray-500">
-             we sell and buy lands in every area in cameroon.
-             we sign layout plans.
-             we develop lands that is we open roads,provide electricity and water.
-             we attract investors or buyer.
-             we solve administrative, judiciary and commercial land issues.
-             we advise you on how to make use of your land.
+              <p className="mx-auto mt-4 max-w-3xl text-base text-gray-900">
+              <p className="mb-4">
+        REAL ESTATE refers to property consisting of land and the buildings on it, along with its natural resources such as crops, minerals, or water. It also includes the business of buying, selling, or renting these properties. Key aspects include:
+    </p>
 
-              </p>
-            </div>
+    <div className="mb-4">
+        <p className="font-bold">RESIDENTIAL REAL ESTATE:</p>
+        <p>Properties designed for people to live in, such as houses, apartments, and condominiums.</p>
+    </div>
+
+    <div className="mb-4">
+        <p className="font-bold">COMMERCIAL REAL ESTATE:</p>
+        <p>Properties used for business purposes, such as offices, shops, and hotels.</p>
+    </div>
+
+    <div className="mb-4">
+        <p className="font-bold">INDUSTRIAL REAL ESTATE:</p>
+        <p>Properties used for manufacturing, production, distribution, and storage, such as factories and warehouses.</p>
+    </div>
+
+    <div className="mb-4">
+        <p className="font-bold">LAND:</p>
+        <p>Undeveloped property, agricultural land, and vacant lots.</p>
+    </div>
+
+    <p>
+        REAL ESTATE transactions involve various professionals, including real estate agents, appraisers, inspectors, and lawyers, and the market is influenced by economic factors, location, and supply and demand dynamics.
+    </p>
+       </p>
+        </div>
 
            
 

@@ -81,15 +81,46 @@ export default function RentingSelling() {
 
         <main>
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div className="py-24 text-center">
+          <div className="py-24 text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900">RENTING AND SELLING OF PUBLIC WORK EQUIPMENT</h1>
-              <p className="mx-auto mt-4 max-w-3xl text-base text-gray-500">
-              We rent and sell equipment for you Road clearing and construction, Land clearing such as BULLDOZER,
-              FROND WILD HOLDER,COMPACTOR AND GRADER
-              We also sell and rent houses and appartment.
+              <p className="mx-auto mt-4 max-w-3xl text-base text-gray-900">
+              <p className="mb-4">
+              Renting and selling of public work equipment involves the business of providing construction and heavy equipment for temporary use or permanent acquisition by clients in various industries.
+           </p>
+           <div className="mb-4">
+        <p className="font-bold">RENTING</p>
+        <p>Companies rent out equipment such as excavators, bulldozers, cranes, and trucks to construction firms, municipalities, and other entities for specified periods. This allows clients to use expensive machinery without the high upfront costs of ownership. Rental terms can vary from short-term to long-term leases.</p>
+    </div>
+    <div className="mb-4">
+        <p className="font-bold">SELLING</p>
+        <p>Businesses also sell equipment to customers who prefer to own rather than rent. This involves new or used equipment transactions, often including maintenance agreements, warranties, and financing options.
+    </p>
+    </div>
 
-              </p>
-            </div>
+    <p className="font-bold">KEY ASPECTS:</p> 
+
+    <div className="mb-4">
+        <p className="font-bold">Equipment Range</p>
+        <p>BIncludes heavy machinery, construction tools, and specialized vehicles</p>
+    </div>
+
+    <div className="mb-4">
+        <p className="font-bold">Customer Base</p>
+        <p>Contractors, builders, municipalities, and other public and private entities.</p>
+    </div>
+
+    <div className="mb-4">
+        <p className="font-bold">Logistics</p>
+        <p>Transport, setup, and maintenance services may be included</p>
+    </div>
+
+    <div className="mb-4">
+        <p className="font-bold">Financial Considerations</p>
+        <p>Rental rates, purchase prices, financing options, and resale values are factors.</p>
+    </div>
+
+          </p>
+        </div>
 
            
 
