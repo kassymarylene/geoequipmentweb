@@ -119,6 +119,10 @@ export default function RentingSelling() {
         <p>Rental rates, purchase prices, financing options, and resale values are factors.</p>
     </div>
 
+    <div className="mb-4">
+        <p className="font-bold">Partnership</p>
+        <p>We partner with companies who provide construction equipments irrespective of the quantities with possibility of short or long term payment</p>
+    </div>
           </p>
         </div>
 

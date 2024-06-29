@@ -27,7 +27,7 @@ export default function About({
             OUR STORY
           </p>
           <p className="text-4xl text-blue-900 font-bold text-center z-20 relative mt-16 dark:text-gray-300">
-            ETS GEO-EQUIPMENT CONSULTANT
+           GEO-EQUIPMENT CONSULTANT
           </p>
         </div>
       </div>

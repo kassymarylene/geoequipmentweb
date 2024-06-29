@@ -38,7 +38,7 @@ const Hero = ({ address, phone, email }: any) => {
         <div className=" h-screen text-center flex flex-col justify-center items-center">
         <div className="">
     <h1 className="font-medium text-2xl text-center mt-24 capitalize">
-        ETS GEO-EQUIPEMENT CONSULTANT COVERS
+       GEO-EQUIPEMENT CONSULTANT COVERS
         <br /> 
         <span className="block mt-4text-gray-800	">Real State</span>
         <span className="block mt-2">Earth Construction Equipment Renting and Selling</span>

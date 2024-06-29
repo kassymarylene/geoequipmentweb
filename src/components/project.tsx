@@ -27,7 +27,7 @@ const projectList = [
     href: "#",
   },
   {
-    imageSrc: "/images/geo28.jpeg",
+    imageSrc: "/images/geo68.jpeg",
     title: "TURNEL CONSTRUCTION",
     description: " building tunnels, which are underground passages used for transportation (such as roads and railways) and mining",
     href: "#",
@@ -39,7 +39,7 @@ const projectList = [
     href: "#",
   },
   {
-    imageSrc: "/images/geo11.jpeg",
+    imageSrc: "/images/geo63.jpeg",
     title: "PROJECTS OUT OF THE COUNTRY",
     description: "Construction work out of the country",
     href: "#",
@@ -63,13 +63,13 @@ const projectList = [
     href: "#",
   },
   {
-    imageSrc: "/images/geo53.jpeg",
+    imageSrc: "/images/geo71.jpeg",
     title: "ROAD CONSTRUCTION",
     description: " the process of building or repairing roads and highways.This involves(Planning and Design,Land Clearing and Excavation,Subgrade Preparation,Paving,Finishing Touches,Inspection and Maintenance):",
     href: "#",
   },
   {
-    imageSrc: "/images/geo12.jpeg",
+    imageSrc: "/images/geo70.jpeg",
     title: "BUILDING CONSTRUCTION",
     description:
       "process of creating structures such as houses, office buildings, and skyscrapers it involves collaboration among architects, engineers, contractors, and various tradespeople the key steps are(Planning and Designe,Permits and Approvals,Site Preparation,Structural Work,Systems Installation,Interior and Exterior Finishing,Final Inspections and Occupancy) ",

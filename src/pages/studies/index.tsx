@@ -5,92 +5,91 @@ const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 const products1 = [
   {
     id: 1,
-    name: 'Bigining of Bluiding',
+    name: '',
     href: '#',
     price: '',
-    description: 'Step One',
+    description: '',
     imageSrc: '/images/geo76.jpeg',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 2,
-    name: 'First Level and Pouring the Slab ',
+    name: '',
     href: '#',
     price: '',
-    description: 'Step Two',
+    description: '',
     imageSrc: '/images/geo67.jpeg',
     imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
   },
   {
     id: 3,
-    name: 'Starting Roofing',
+    name: '',
     href: '#',
     price: '',
-    description: 'Step three',
+    description: '',
     imageSrc: '/images/geo74.jpeg',
     imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
   },
   // More products...
   {
     id: 3,
-    name: 'Starting Roofing',
+    name: '',
     href: '#',
     price: '',
-    description: 'Step three',
+    description: '',
     imageSrc: '/images/geo19.jpeg',
     imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
   },
   {
     id: 9,
-    name: 'Handling Of Keys',
+    name: '',
     href: '*',
     price: '',
-    description: 'Step Six',
-    imageSrc: '/images/geo58.jpeg',
+    description: '',
+    imageSrc: '/images/geo63.jpeg',
     imageAlt:
-      'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
+      '',
     },
     {
       id: 9,
-      name: 'Handling Of Keys',
+      name: '',
       href: '*',
       price: '',
-      description: 'Step Six',
-      imageSrc: '/images/geo59.jpeg',
+      description: '',
+      imageSrc: '/images/geo72.jpeg',
       imageAlt:
-        'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
+        '',
       },
   // More products...
 ]
 const products2 = [
   {
     id: 7,
-    name: 'The Inside',
+    name: '',
     href: '#',
     price: '',
-    description: 'Step Four',
+    description: '',
     imageSrc: '/images/geo70.jpeg',
-    imageAlt: 'Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.',
+    imageAlt: '',
   },
   {
     id: 8,
-    name: 'Last Verification and Complition',
+    name: '',
     href: '#',
     price: '',
-    description: 'Step Five',
+    description: '',
     imageSrc: '/images/geo73.jpeg',
     imageAlt:
-      'Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.',
+      '',
   },
   {
     id: 9,
-    name: 'Handling Of Keys',
+    name: '',
     href: '#',
     price: '',
-    description: 'Step Six',
+    description: '',
     imageSrc: '/images/geo69.jpeg',
-    imageAlt:
-      'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
+    imageAlt: '',
   },
       // More products...
 ]
@@ -99,7 +98,7 @@ function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function RealEstate() {
+export default function Studies() {
 
 
 
@@ -109,36 +108,48 @@ export default function RealEstate() {
 
       <div>
        
-
         <main>
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="py-24 text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900">REAL STATE</h1>
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900">STUDIES</h1>
               <p className="mx-auto mt-4 max-w-3xl text-base text-gray-900">
               <p className="mb-4">
-        REAL ESTATE refers to property consisting of land and the buildings on it, along with its natural resources such as crops, minerals, or water. It also includes the business of buying, selling, or renting these properties. Key aspects include:
-    </p>
-
+                We studie the lands to ensure the stability and safety of structures like buildings, bridges, dams, and tunnels.</p>
+              
+                <p className="font-bold"> Key Areas of Study:</p> 
     <div className="mb-4">
-        <p className="font-bold">RESIDENTIAL REAL ESTATE:</p>
-        <p>Properties designed for people to live in, such as houses, apartments, and condominiums.</p>
+        <p className="font-bold">Soil Mechanics:</p>
+        <p>Understanding the properties and behavior of soil, including its strength, compressibility, and permeability.</p>
     </div>
 
     <div className="mb-4">
-        <p className="font-bold">COMMERCIAL REAL ESTATE:</p>
-        <p>Properties used for business purposes, such as offices, shops, and hotels.</p>
+        <p className="font-bold">Rock Mechanics:</p>
+        <p>Study of the properties and behavior of rock masses, essential for tunneling and mining operations.
+        </p>
     </div>
 
     <div className="mb-4">
-        <p className="font-bold">INDUSTRIAL REAL ESTATE:</p>
-        <p>Properties used for manufacturing, production, distribution, and storage, such as factories and warehouses.</p>
+        <p className="font-bold">Foundation Engineering:</p>
+        <p>Design and analysis of foundations for various structures, including shallow and deep foundations.</p>
     </div>
 
     <div className="mb-4">
-        <p className="font-bold">LAND:</p>
-        <p>Undeveloped property, agricultural land, and vacant lots.</p>
+        <p className="font-bold">Slope Stability:</p>
+        <p>Analysis and stabilization of natural and artificial slopes to prevent landslides and erosion.
+        </p>
     </div>
 
+    <div className="mb-4">
+        <p className="font-bold">Earthquake Engineering:</p>
+        <p>Designing structures to withstand seismic activities and understanding soil-structure interaction during earthquakes.
+        </p>
+    </div>
+
+    <div className="mb-4">
+        <p className="font-bold">Ground Improvement:</p>
+        <p>Techniques to enhance the properties of soil, such as compaction, grouting, and soil stabilization.
+        </p>
+    </div>
     <p>
         REAL ESTATE transactions involve various professionals, including real estate agents, appraisers, inspectors, and lawyers, and the market is influenced by economic factors, location, and supply and demand dynamics.
     </p>

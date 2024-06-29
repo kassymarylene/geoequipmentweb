@@ -29,8 +29,8 @@ const Services = () => {
       <div className="relative justify-center items-center">
         <p className="font-medium text-base text-center mt-20  text-bluePText">
           We have developed a unique space where you can work and create. We
-          thought of everything to the smallest
-          <br /> detail. You will be ableand happy to conduct your business.
+          think of everything to the smallest
+          <br /> detail. We will be very please happy to conduct your business.
         </p>
       </div>
 
@@ -62,6 +62,7 @@ const Services = () => {
         </div>
         </Link>
 
+        <Link href="/studies">
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
           <div className="bg-white h-[120px] w-[120px] sm:w-[166px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={officeIcon} alt="office" className="w-10 h-10" />
@@ -69,7 +70,9 @@ const Services = () => {
               CONTRACTS           </p>
           </div>
         </div>
+        </Link>
 
+        <Link href="/studies">
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
           <div className="bg-white h-[220px] w-[220px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={warehouseIcon} alt="warehouse" className="w-10 h-10" />
@@ -78,7 +81,9 @@ const Services = () => {
             </p>
           </div>
         </div>
+    </Link>
 
+        <Link href="/studies">
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
           <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={parkingIcon} alt="parking" className="w-[26px] h-11" />
@@ -87,6 +92,8 @@ const Services = () => {
             </p>
           </div>
         </div>
+        </Link>
+
       </div>
     </div>
   );
