@@ -28,20 +28,20 @@ const projectList = [
   },
   {
     imageSrc: "/images/geo68.jpeg",
-    title: "TURNEL CONSTRUCTION",
-    description: " building tunnels, which are underground passages used for transportation (such as roads and railways) and mining",
+    title: "SITE PLAN",
+    description: "Detailed layout of a building floor with residential units and common areas.",
     href: "#",
   },
   {
     imageSrc: "/images/geo27.jpeg",
     title: "TURNEL CONSTRUCTION",
-    description: "building tunnels, which are underground passages used for transportation (such as roads and railways) and mining",
+   description: "Building turnels which are underground passages used for transportation and mining ",
     href: "#",
   },
   {
     imageSrc: "/images/geo63.jpeg",
-    title: "PROJECTS OUT OF THE COUNTRY",
-    description: "Construction work out of the country",
+    title: "SITE PLAN",
+    description: "Larger layout of a residential development with housing units and open spaces.",
     href: "#",
   },
   {
@@ -64,15 +64,14 @@ const projectList = [
   },
   {
     imageSrc: "/images/geo71.jpeg",
-    title: "ROAD CONSTRUCTION",
-    description: " the process of building or repairing roads and highways.This involves(Planning and Design,Land Clearing and Excavation,Subgrade Preparation,Paving,Finishing Touches,Inspection and Maintenance):",
+    title: "SITE PLAN",
+    description: " Larger layout of a residential development with housing units and open spaces.",
     href: "#",
   },
   {
     imageSrc: "/images/geo70.jpeg",
-    title: "BUILDING CONSTRUCTION",
-    description:
-      "process of creating structures such as houses, office buildings, and skyscrapers it involves collaboration among architects, engineers, contractors, and various tradespeople the key steps are(Planning and Designe,Permits and Approvals,Site Preparation,Structural Work,Systems Installation,Interior and Exterior Finishing,Final Inspections and Occupancy) ",
+    title: "SITE PLAN",
+    description: "Detailed layout of a building floor with residential units and common areas.",
     href: "#",
   },
 ];

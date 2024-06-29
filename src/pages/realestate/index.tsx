@@ -5,38 +5,38 @@ const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
 const products1 = [
   {
     id: 1,
-    name: 'Bigining of Bluiding',
+    name: 'Site Plan',
     href: '#',
     price: '',
-    description: 'Step One',
+    description: 'One',
     imageSrc: '/images/geo76.jpeg',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 2,
-    name: 'First Level and Pouring the Slab ',
+    name: 'Site Plan with the OutSide',
     href: '#',
     price: '',
-    description: 'Step Two',
+    description:'Two',
     imageSrc: '/images/geo67.jpeg',
     imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
   },
   {
     id: 3,
-    name: 'Starting Roofing',
+    name: 'Inside Plan',
     href: '#',
     price: '',
-    description: 'Step three',
+    description: 'three',
     imageSrc: '/images/geo74.jpeg',
     imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
   },
   // More products...
   {
     id: 3,
-    name: 'Starting Roofing',
+    name: 'Card Design',
     href: '#',
     price: '',
-    description: 'Step three',
+    description: 'Four',
     imageSrc: '/images/geo19.jpeg',
     imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
   },
@@ -45,17 +45,17 @@ const products1 = [
     name: 'Handling Of Keys',
     href: '*',
     price: '',
-    description: 'Step Six',
+    description: 'Five',
     imageSrc: '/images/geo58.jpeg',
     imageAlt:
       'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
     },
     {
       id: 9,
-      name: 'Handling Of Keys',
+      name: 'The Inside',
       href: '*',
       price: '',
-      description: 'Step Six',
+      description: 'Six',
       imageSrc: '/images/geo59.jpeg',
       imageAlt:
         'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
@@ -65,29 +65,29 @@ const products1 = [
 const products2 = [
   {
     id: 7,
-    name: 'The Inside',
+    name: 'The Inside Plan',
     href: '#',
     price: '',
-    description: 'Step Four',
+    description: 'Seven',
     imageSrc: '/images/geo70.jpeg',
     imageAlt: 'Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.',
   },
   {
     id: 8,
-    name: 'Last Verification and Complition',
+    name: 'Last Verification With Coloring',
     href: '#',
     price: '',
-    description: 'Step Five',
+    description: 'Eight',
     imageSrc: '/images/geo73.jpeg',
     imageAlt:
       'Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.',
   },
   {
     id: 9,
-    name: 'Handling Of Keys',
+    name: 'Inside design',
     href: '#',
     price: '',
-    description: 'Step Six',
+    description: 'Nine',
     imageSrc: '/images/geo69.jpeg',
     imageAlt:
       'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
@@ -109,7 +109,6 @@ export default function RealEstate() {
 
       <div>
        
-
         <main>
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="py-24 text-center">

@@ -62,7 +62,7 @@ const Services = () => {
         </div>
         </Link>
 
-        <Link href="/studies">
+        <Link href="/">
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
           <div className="bg-white h-[120px] w-[120px] sm:w-[166px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={officeIcon} alt="office" className="w-10 h-10" />
@@ -72,7 +72,7 @@ const Services = () => {
         </div>
         </Link>
 
-        <Link href="/studies">
+        <Link href="/">
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
           <div className="bg-white h-[220px] w-[220px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={warehouseIcon} alt="warehouse" className="w-10 h-10" />
@@ -81,7 +81,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-    </Link>
+        </Link>
 
         <Link href="/studies">
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
