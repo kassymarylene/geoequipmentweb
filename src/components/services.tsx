@@ -30,7 +30,7 @@ const Services = () => {
         <p className="font-medium text-base text-center mt-20  text-bluePText">
           We have developed a unique space where you can work and create. We
           think of everything to the smallest
-          <br /> detail. We will be very please happy to conduct your business.
+          <br /> detail.We look forward to the opportunity to support and enhance your business endeavors.
         </p>
       </div>
 
