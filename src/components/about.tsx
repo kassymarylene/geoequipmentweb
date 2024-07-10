@@ -20,27 +20,35 @@ export default function About({
 
       <div className="relative ">
         <div className="flex flex-col justify-center items-center mt-20">
-          <p
-            className="text-9xl sm:text-10xl text-blue-700 opacity-5 font-black text-center z-0 absolute top-0 left-0 w-full dark:text-white
-          "
-          >
-            OUR STORY
-          </p>
-          <p className="text-4xl text-blue-900 font-bold text-center z-20 relative mt-16 dark:text-gray-300">
+        <p className="text-4xl text-blue-900 font-bold text-center z-20 relative mt-16 dark:text-gray-300">
            GEO-EQUIPMENT CONSULTANT
           </p>
+           <p className="text-center mt-4 dark:text-gray-300">
+              Reg: RC.BDA.2014A.179
+              <br/>
+              TAXPAYER N°: M 0 4 1 4 1 2 4 4 0  2 5 5 R
+              <br/>
+               B.P 916 Yaounde
+               <br/>
+               Afriland first Bank  Acc N°: 06489961001
+               <br/>
+               CCC Bank Acc N°:37211933402
+               <br/>
+               Ecobank Acc N°: 0222845401
+            </p>
         </div>
       </div>
-
       <div className="relative justify-center items-center">
-        <p className="font-medium text-base text-center mt-20  text-whiteText">
-        is an Establissement base in Yaounde-Cameroon precisely at entre phamarcam created in 2014 by AYONGABA FRANCOIS AGWENAM<br/> a young business man and public work engineer 
-        a father of 3 children who live at ODZA YAOUNDE CAMEROON <br/>and has several activity under his control in which the most recent ones is 
-        CEO of GEO-EQUIPMENT <br/>a compagny which turn on 20-500 Millions FCFA and covers 17 workers.
+        <p className="font-medium text-base text-center mt-5  text-whiteText">
+        is an Establissement base in Yaounde-Cameroon precisely at entre phamarcam created in 2014 by AYONGABA FRANCOIS AGWENAM<br/> a young business man and public work engineer <br/>who has several activity under his control in which the most recent and popular one is 
+        GEO-EQUIPMENT CONSULTANT <br/>a compagny which turn on 20-500 Millions FCFA and covers 17 workers.
        <br/> we make expert available to discuss with you 24h/7 on any of our services you need online and offline. 
        <br/>we are open 24H/7 from 8H30-17H30 except Saturday:8H30-13H30 
-       contact us on <br/>CALL:656169787/680941692/678902625 <br/>Whatsapp:677355166/+4917659729775/690462359/678902625
-
+       contact us:
+       <span className="font-medium text-base text-center mt-1  text-whiteText">
+        <br/>CALL: 656169787/680941692/678902625<br/>
+        <br/> Whatsapp: 677355166/697204969/+4917659729775/690462359<br/>
+        </span>
         </p>
       </div>
 

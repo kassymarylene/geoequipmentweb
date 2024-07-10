@@ -16,18 +16,18 @@ const Services = () => {
         </button>
       </div>
       <div className="relative ">
-        <div className="flex flex-col justify-center items-center mt-20">
+        <div className="flex flex-col justify-center items-center mt-10">
           <p className=" text-8xl sm:text-10xl text-blue-700 opacity-5 font-black text-center z-0 absolute top-0 left-0 w-full uppercase  dark:text-white">
             services
           </p>
-          <p className="text-4xl text-blue-900 font-bold text-center z-20 relative mt-7 sm:mt-14 dark:text-gray-300">
+          <p className="text-4xl text-blue-900 font-bold text-center z-20 relative mt-5 sm:mt-10 dark:text-gray-300">
             Services for Maximum Efficiency
           </p>
         </div>
       </div>
 
       <div className="relative justify-center items-center">
-        <p className="font-medium text-base text-center mt-20  text-bluePText">
+        <p className="font-medium text-base text-center mt-10  text-bluePText">
           We have developed a unique space where you can work and create. We
           think of everything to the smallest
           <br /> detail.We look forward to the opportunity to support and enhance your business endeavors.
@@ -35,7 +35,7 @@ const Services = () => {
       </div>
 
       {/* 5 icons and names of services */}
-      <div className="grid grid-cols-2 sm:flex justify-center items-center mt-16 ml-[40px]">
+      <div className="grid grid-cols-2 sm:flex justify-center items-center mt-10 ml-[40px]">
       <Link href="/realestate">
       <div className="flex flex-col justify-center items-center mr-[30px] sm:mr-[60px] sm:ml-[50px] hover:scale-125 ease-in duration-200">
           <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
@@ -56,13 +56,13 @@ const Services = () => {
               className="w-[45px] h-[45px]"
             />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
-              RENTING AND SELLING OF PUBLIC WORKS EQUIPMENT SUPLIES
+            RENTING AND SELLING OF CONSTRUCTION EQUIPMENT
             </p>
           </div>
         </div>
         </Link>
 
-        <Link href="/">
+        <Link href="/contracts">
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
           <div className="bg-white h-[120px] w-[120px] sm:w-[166px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={officeIcon} alt="office" className="w-10 h-10" />
@@ -72,12 +72,12 @@ const Services = () => {
         </div>
         </Link>
 
-        <Link href="/">
+        <Link href="/ngeneraltrade">
         <div className="flex flex-col  mr-[60px] hover:scale-125  ease-in duration-200">
           <div className="bg-white h-[220px] w-[220px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={warehouseIcon} alt="warehouse" className="w-10 h-10" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
-            NEGOTIATION AND GENERAL COMMERCE
+            NEGOTIATION AND GENERAL TRADE
             </p>
           </div>
         </div>
@@ -88,7 +88,7 @@ const Services = () => {
           <div className="bg-white h-[120px] w-[120px] mr-[30px] flex flex-col justify-center items-center rounded-[120px] shadow-xl p-[10px] gap-[10px] mb-5 dark:bg-gray-700">
             <Image src={parkingIcon} alt="parking" className="w-[26px] h-11" />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
-              STUDIES
+            TOPOGRAPHIC STUDIES
             </p>
           </div>
         </div>

@@ -41,11 +41,11 @@ const Hero = ({ address, phone, email }: any) => {
        GEO-EQUIPEMENT CONSULTANT COVERS
         <br /> 
         <span className="block mt-4text-gray-800	">Real State</span>
-        <span className="block mt-2">Earth Construction Equipment Renting and Selling</span>
+        <span className="block mt-2">Renting and Selling of Construction Equipment</span>
         <span className="block mt-2">Constracts</span>
-        <span className="block mt-2">Negotiator</span>
-        <span className="block mt-2">Studies</span>
-        <span className="block mt-2">General Commerce</span>
+        <span className="block mt-2">Negotiation</span>
+        <span className="block mt-2">Topographic Studies and Performance of Public Procurement</span>
+        <span className="block mt-2">General Trade</span>
     </h1>
 </div>
          

@@ -17,7 +17,7 @@ const Team = () => {
             <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-0 xl:mx-4 xl:w-1/2 md:grid-cols-2">
                
                 <Card
-      className="max-w-lg w-lvw"
+      className="max-w-lg"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc="/images/geo23.jpeg"
     >
@@ -25,8 +25,22 @@ const Team = () => {
        Mr AYONGABA Francios AGWENAM
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
-         The CEO of GOE-EQUIPMENT CONSULTANT  <br/>a young business man and public work engineer, 
-         father of 3 children he lives at ODZA YAOUNDE CAMEROON <br/>and has several activity under his control.
+         The CEO of GOE-EQUIPMENT CONSULTANT  <br/>a young business man and public work engineer,<br/>who has several activity under his control.
+      </p>
+    </Card>
+
+    <Card
+      className="max-w-lg"
+      imgAlt="Meaningful alt text for an image that is not purely decorative"
+      imgSrc="/images/geo77.jpeg"
+    >
+      <h5 className="text-2xl font-bold tracking-tight text-gray-600 dark:text-white">
+       Mr GUELA LIENOU Maurice
+
+      </h5>
+      <p className="font-normal text-gray-600 dark:text-gray-400">
+      DGA of GOE-EQUIPMENT CONSULTANT
+      <br/>a young business man and public work engineer,<br/>
       </p>
     </Card>
 
