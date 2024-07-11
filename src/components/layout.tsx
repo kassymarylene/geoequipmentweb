@@ -30,28 +30,28 @@ export default function Layout({ children }: any) {
   }, []);
   
     return (
-    //   <>
-    //     <Header />
-    //     <main>{children}</main>
-    //     <Footer />
-    //     {showButton && (
-    //       <div className="fixed bottom-24 right-10 z-50">
-    //         <button
-    //           onClick={handleScrollToTop}
-    //           className="bg-slate-100 rounded shadow-xl overflow-visible"
-    //         >
-    //           <Image src={scrollIcon} alt="scroll button" />
-    //         </button>
-    //       </div>
-    //     )}
-    //   </>
+      <>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        {showButton && (
+          <div className="fixed bottom-24 right-10 z-50">
+            <button
+              onClick={handleScrollToTop}
+              className="bg-slate-100 rounded shadow-xl overflow-visible"
+            >
+              <Image src={scrollIcon} alt="scroll button" />
+            </button>
+          </div>
+        )}
+      </>
 
-    <div className="flex flex-col min-h-screen mx-auto px-4 pt-8 pb-16">
-    <div className="flex-grow">
-      <Header />
-      <main className="my-0 py-16">{children}</main>
-    </div>
-    <Footer />
-  </div>
+  //   <div className="flex flex-col min-h-screen mx-auto px-4 pt-8 pb-16">
+  //   <div className="flex-grow">
+  //     <Header />
+  //     <main className="my-0 py-16">{children}</main>
+  //   </div>
+  //   <Footer />
+  // </div>
     )
   }

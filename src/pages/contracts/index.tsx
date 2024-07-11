@@ -1,102 +1,102 @@
 
-const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
+const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"]
 
 
 const products1 = [
   {
-    id: 1,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
-    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+    id: 21,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
+    imageAlt: "Person using a pen to cross a task off a productivity paper card.",
   },
   {
-    id: 2,
-    name: '',
-    href: '#',
-    price: '',
-    description:'',
-    imageSrc: '/',
-    imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
+    id: 22,
+    name: "",
+    href: "#",
+    price: "",
+    description:"",
+    imageSrc: "/",
+    imageAlt: "Paper card sitting upright in walnut card holder on desk.",
   },
   {
-    id: 3,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
-    imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
+    id: 23,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
+    imageAlt: "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
   },
   // More products...
   {
-    id: 3,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
-    imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
+    id: 27,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
+    imageAlt: "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
   },
   {
-    id: 9,
-    name: '',
-    href: '*',
-    price: '',
-    description: '',
-    imageSrc: '/',
+    id: 28,
+    name: "",
+    href: "*",
+    price: "",
+    description: "",
+    imageSrc: "/",
     imageAlt:
-      'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
+      "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
     },
     {
-      id: 9,
-      name: '',
-      href: '*',
-      price: '',
-      description: '',
-      imageSrc: '/',
+      id: 29,
+      name: "",
+      href: "*",
+      price: "",
+      description: "",
+      imageSrc: "/",
       imageAlt:
-        'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
+        "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
       },
   // More products...
 ]
 const products2 = [
   {
-    id: 7,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
-    imageAlt: 'Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.',
+    id: 17,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
+    imageAlt: "Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.",
   },
   {
-    id: 8,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
+    id: 18,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
     imageAlt:
-      'Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.',
+      "Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.",
   },
   {
-    id: 9,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
+    id: 19,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
     imageAlt:
-      'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
+      "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
   },
       // More products...
 ]
 
 function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ")
 }
 
 export default function Contracts() {
@@ -113,9 +113,9 @@ export default function Contracts() {
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="py-24 text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900">CONTRACTS</h1>
-              <p className="mx-auto mt-2 max-w-3xl text-base text-gray-900">
+              <div className="mx-auto mt-2 max-w-3xl text-base text-gray-900">
               <p className="mb-4">
-        GEO-EQUIOMENT CONSULTANT sings contract in respect to the country's law,we partner with several compagnies.We sell and rent equipments irrespective of the quantity for shorts and longterm payment options.
+        GEO-EQUIOMENT CONSULTANT sings contract in respect to the country&apos;s law,we partner with several compagnies.We sell and rent equipments irrespective of the quantity for shorts and longterm payment options.
     </p>
 
     <div className="mb-4">
@@ -148,7 +148,7 @@ export default function Contracts() {
         </p>
     </div>
 
-       </p>
+       </div>
         </div>
 
            

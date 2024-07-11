@@ -1,102 +1,102 @@
 
-const currencies = ['CAD', 'USD', 'AUD', 'EUR', 'GBP']
+const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"]
 
 
 const products1 = [
   {
     id: 1,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
-    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
+    imageAlt: "Person using a pen to cross a task off a productivity paper card.",
   },
   {
     id: 2,
-    name: '',
-    href: '#',
-    price: '',
-    description:'',
-    imageSrc: '/',
-    imageAlt: 'Paper card sitting upright in walnut card holder on desk.',
+    name: "",
+    href: "#",
+    price: "",
+    description:"",
+    imageSrc: "/",
+    imageAlt: "Paper card sitting upright in walnut card holder on desk.",
   },
   {
     id: 3,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
-    imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
+    imageAlt: "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
   },
   // More products...
   {
-    id: 3,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
-    imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
+    id: 4,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
+    imageAlt: "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
   },
   {
-    id: 9,
-    name: '',
-    href: '*',
-    price: '',
-    description: '',
-    imageSrc: '/',
+    id: 5,
+    name: "",
+    href: "*",
+    price: "",
+    description: "",
+    imageSrc: "/",
     imageAlt:
-      'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
+      "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
     },
     {
-      id: 9,
-      name: '',
-      href: '*',
-      price: '',
-      description: '',
-      imageSrc: '/',
+      id: 6,
+      name: "",
+      href: "*",
+      price: "",
+      description: "",
+      imageSrc: "/",
       imageAlt:
-        'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
+        "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
       },
   // More products...
 ]
 const products2 = [
   {
-    id: 7,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
-    imageAlt: 'Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.',
+    id: 17,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
+    imageAlt: "Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.",
   },
   {
-    id: 8,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
+    id: 18,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
     imageAlt:
-      'Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.',
+      "Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.",
   },
   {
-    id: 9,
-    name: '',
-    href: '#',
-    price: '',
-    description: '',
-    imageSrc: '/',
+    id: 19,
+    name: "",
+    href: "#",
+    price: "",
+    description: "",
+    imageSrc: "/",
     imageAlt:
-      'Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.',
+      "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
   },
       // More products...
 ]
 
 function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ")
 }
 
 export default function NgeneralTrade() {
@@ -113,7 +113,7 @@ export default function NgeneralTrade() {
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <div className="py-24 text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900">NEGOTIATION AND GENERAL TRADE</h1>
-              <p className="mx-auto mt-2 max-w-3xl text-base text-gray-900">
+              <div className="mx-auto mt-2 max-w-3xl text-base text-gray-900">
               <p className="mb-4">
         GEO-EQUIOMENT CONSULTANT can negotiate any business for you in Cameroon be it wit gouvement or 
         business administratives,we also get any GOODS of your choise for you.</p>
@@ -153,7 +153,7 @@ export default function NgeneralTrade() {
           <br/>CUSTOMER SERVICE: Provide reliable support.<br/>
         </p>
     </div>
-       </p>
+       </div>
         </div>
             {/* Product grid */}
             <section aria-labelledby="products-heading" className="mt-8">
