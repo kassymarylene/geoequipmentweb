@@ -1,3 +1,5 @@
+import Image, { StaticImageData } from "next/image";
+
 const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
 
 const products1 = [
@@ -162,10 +164,12 @@ export default function RentingSelling() {
                 {products1.map((product) => (
                   <a key={product.id} href={product.href} className="group">
                     <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                      <img
+                      <Image
+                        className="h-full w-full object-cover object-center group-hover:opacity-75"
                         src={product.imageSrc}
                         alt={product.imageAlt}
-                        className="h-full w-full object-cover object-center group-hover:opacity-75"
+                        width={512}
+                        height={1}
                       />
                     </div>
                     <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
@@ -192,10 +196,12 @@ export default function RentingSelling() {
                 {products2.map((product) => (
                   <a key={product.id} href={product.href} className="group">
                     <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                      <img
+                      <Image
+                        className="h-full w-full object-cover object-center group-hover:opacity-75"
                         src={product.imageSrc}
                         alt={product.imageAlt}
-                        className="h-full w-full object-cover object-center group-hover:opacity-75"
+                        width={512}
+                        height={1}
                       />
                     </div>
                     <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
