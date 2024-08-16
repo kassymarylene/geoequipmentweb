@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import Image, { StaticImageData } from "next/image";
 
 const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
@@ -105,6 +106,42 @@ function classNames(...classes: any) {
 
 export default function RealEstate() {
   return (
+    <>
+    <NextSeo
+        title="Real Estate - Site Plans, Inside Plans, and More"
+        description="Explore our range of real estate plans including site plans, inside plans, and more. Perfect for all your real estate needs."
+        canonical="https://www.geoequipcam.com/realestate"
+        openGraph={{
+          url: 'https://www.geoequipcam.com/realestate',
+          title: 'Real Estate - Site Plans, Inside Plans, and More',
+          description: 'Explore our range of real estate plans including site plans, inside plans, and more. Perfect for all your real estate needs.',
+          images: [
+            {
+              url: '/images/geo76.jpeg',
+              width: 800,
+              height: 600,
+              alt: 'Person using a pen to cross a task off a productivity paper card.',
+            },
+            {
+              url: '/images/geo67.jpeg',
+              width: 800,
+              height: 600,
+              alt: 'Paper card sitting upright in walnut card holder on desk.',
+            },
+          ],
+          site_name: 'Real Estate',
+        }}
+        additionalMetaTags={[
+          {
+            name: 'keywords',
+            content: 'real estate, site plans, inside plans, property, residential, commercial, industrial',
+          },
+          {
+            name: 'Mr AYONGABA Francios AGWENAM',
+            content: 'Geo-Consultancy Real Estate',
+          },
+        ]}
+      />
     <div className="bg-gray-50">
       <div>
         <main>
@@ -255,5 +292,6 @@ export default function RealEstate() {
         </main>
       </div>
     </div>
+    </>
   );
 }

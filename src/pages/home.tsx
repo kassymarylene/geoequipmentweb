@@ -1,13 +1,11 @@
-import Services from '@/components/services';
-import Team from '@/components/team';
-import About from '../components/about';
-import Form from '../components/form';
-import Footer from '@/components/footer';
-import Hero from '@/components/hero';
-import Project from '@/components/project';
-import { NextSeo } from 'next-seo';
-
-
+import Services from "@/components/services";
+import Team from "@/components/team";
+import About from "../components/about";
+import Form from "../components/form";
+import Footer from "@/components/footer";
+import Hero from "@/components/hero";
+import Project from "@/components/project";
+import { NextSeo } from "next-seo";
 
 const HomePage = () => {
   return (
@@ -22,23 +20,24 @@ Negotiation
 Topographic Studies And Performance Of Public Procurement
 General Trade"
         openGraph={{
-          type: 'website',
-          url: 'https://www.geoequipcam.com',
-          title: 'Geo-Consultancy Real Estate',
-          description: 'Gopographic Studies And Performance Of Public Procurement,renting And Selling Of Construction Equipment',
+          type: "website",
+          url: "https://www.geoequipcam.com",
+          title: "Geo-Consultancy Real Estate",
+          description:
+            "Gopographic Studies And Performance Of Public Procurement,renting And Selling Of Construction Equipment",
           images: [
             {
-              url: 'https://www.geoequipcam.com',
+              url: "https://www.geoequipcam.com",
               width: 800,
               height: 600,
-              alt: 'Og Image Alt',
+              alt: "Og Image Alt",
             },
           ],
         }}
         additionalMetaTags={[
           {
-            name: 'viewport',
-            content: 'width=device-width, initial-scale=1',
+            name: "viewport",
+            content: "width=device-width, initial-scale=1",
           },
         ]}
         canonical="https://www.geoequipcam.com"

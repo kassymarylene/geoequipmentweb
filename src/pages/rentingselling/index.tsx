@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import Image, { StaticImageData } from "next/image";
 
 const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
@@ -74,6 +75,34 @@ function classNames(...classes: any) {
 
 export default function RentingSelling() {
   return (
+    <>
+    <NextSeo
+        title="Renting and Selling of Public Work Equipment"
+        description="Explore our comprehensive range of public work equipment available for rent or purchase. From bulldozers to compactors, we offer high-quality machinery for your construction needs."
+        canonical="https://www.geoequipcam.com/rentingselling"
+        openGraph={{
+          url: 'https://www.geoequipcam.com/rentingselling',
+          title: 'Renting and Selling of Public Work Equipment',
+          description:
+            'Explore our comprehensive range of public work equipment available for rent or purchase. From bulldozers to compactors, we offer high-quality machinery for your construction needs.',
+          images: [
+            {
+              url: 'https://www.geoequipcam.com/images/geo31.jpeg',
+              width: 800,
+              height: 600,
+              alt: 'BullDozer',
+            },
+            {
+              url: 'https://www.geoequipcam.com/images/geo48.jpeg',
+              width: 800,
+              height: 600,
+              alt: 'BullDozer',
+            },
+            // More images...
+          ],
+          site_name: 'geoequipcam',
+        }}
+      />
     <div className="bg-gray-50">
       <div>
         <main>
@@ -219,5 +248,6 @@ export default function RentingSelling() {
         </main>
       </div>
     </div>
+    </>
   );
 }

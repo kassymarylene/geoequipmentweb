@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import Image, { StaticImageData } from "next/image";
 
 const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
@@ -100,6 +101,34 @@ function classNames(...classes: any) {
 
 export default function Studies() {
   return (
+    <>
+    <NextSeo
+        title="Studies and Surveys for Construction Projects"
+        description="Expert studies and surveys including geotechnical surveys, environmental impact assessments, foundation analysis, and more to ensure safe and efficient construction."
+        canonical="https://www.geoequipcam.com/studies"
+        openGraph={{
+          url: 'https://www.geoequipcam.com/studies',
+          title: 'Studies and Surveys for Construction Projects',
+          description:
+            'Expert studies and surveys including geotechnical surveys, environmental impact assessments, foundation analysis, and more to ensure safe and efficient construction.',
+          images: [
+            {
+              url: 'https://www.geoequipcam.com/images/geo76.jpeg',
+              width: 800,
+              height: 600,
+              alt: 'Geotechnical Survey in Progress',
+            },
+            {
+              url: 'https://www.geoequipcam.com/images/geo67.jpeg',
+              width: 800,
+              height: 600,
+              alt: 'Environmental Impact Assessment Team',
+            },
+            // More images...
+          ],
+          site_name: 'geoequipcam',
+        }}
+      />
     <div className="bg-gray-50">
       <div>
         <main>
@@ -236,5 +265,6 @@ export default function Studies() {
         </main>
       </div>
     </div>
+    </>
   );
 }
