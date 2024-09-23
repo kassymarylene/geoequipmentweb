@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import ThemeChanger from './themeChanger';
 import { Span } from 'next/dist/trace';
 import { useRouter } from 'next/router';
+import Image, { StaticImageData } from 'next/image';
 
 const Header = () => {
   const [header, setHeader] = useState(false);
@@ -42,18 +43,29 @@ const Header = () => {
       {/* Menu + Name */}
 
       <div className="max-w-[1240px] m-5 flex justify-between items-center p-4">
-        <Link href="/">
-          <h1
-            style={{ color: `${headerText}` }}
-            className="py-2 text-2xl font-bold hover:text-orange-500"
-          >
-            <p>
-                Geo-Equipment  <br/>
-                <span>Consultant Cameroon</span>  
-          </p>
-          </h1>
-        </Link>
-      </div>
+  <Link href="/" className="flex items-center">
+    <Image
+      src={"/geologo4.jpeg"}
+      alt="Geo-Equipment Logo"
+      width={70} // Adjust width and height as per your logo size
+      height={70}
+      className="mr-2 rounded w-20 h-16" // Add spacing between logo and text
+      priority
+    />
+    <div className="ml-2"> {/* Wrapper for the title and subtitle */}
+      <h1
+        style={{ color: `${headerText}` }}
+        className="py-2 text-2xl font-bold hover:text-orange-500"
+      >
+        Geo-Equipment  
+        <br/>
+        <span>Consultant</span>  
+      </h1>
+   
+    </div>
+  </Link>
+</div>
+
 
      
       {/* navbar Links */}

@@ -24,7 +24,7 @@ General Trade"
           url: "https://www.geoequipcam.com",
           title: "Geo-Consultancy Real Estate",
           description:
-            "Gopographic Studies And Performance Of Public Procurement,renting And Selling Of Construction Equipment",
+            "Promoteur immobilier, Location des engins matériel de construction, Matériel de génie civil, Études, Contrats, Négociation et Commerce général",
           images: [
             {
               url: "https://www.geoequipcam.com",
