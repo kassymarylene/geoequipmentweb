@@ -152,49 +152,52 @@ export default function RealEstate() {
               </h1>
               <p className="mx-auto mt-4 max-w-3xl text-base text-gray-900">
                 <p className="mb-4">
-                  REAL ESTATE refers to property consisting of land and the
-                  buildings on it, along with its natural resources such as
-                  crops, minerals, or water. It also includes the business of
-                  buying, selling, or renting these properties. Key aspects
-                  include:
+                TYPES OF PROPERTIES
+   RESIDENTIAL: The residential real estate market includes apartments, houses, villas, and townhouses. Popular cities for residential properties.
+   COMMERCIAL: Offices, malls, and retail spaces are concentrated in urban areas, particularly Douala and Yaoundé, which are the country’s economic and administrative capitals.
+   INDUSTRIAL: Warehouses, factories, and logistics centers are part of the growing industrial real estate market, especially with infrastructure development in major cities.
+   LAND: Buying land for future development is common, with both urban and rural plots available.
                 </p>
 
                 <div className="mb-4">
-                  <p className="font-bold">RESIDENTIAL REAL ESTATE:</p>
+                  <p className="font-bold">CHALLENGES WE SOLVE</p>
                   <p>
-                    Properties designed for people to live in, such as houses,
-                    apartments, and condominiums.
+    Geo-Equiptment can streamline the land acquisition process by conducting thorough due diligence, legal checks, and navigating the bureaucracy. 
+    We help buyers avoid disputed land or fraudulent transactions.
+    We manage property development projects from start to finish. 
+    We handle architectural designs, construction, project management, and even financing.
+    We solve land  disputes problems, especially in areas where traditional land tenure systems are strong, requiring careful due diligence before purchasing.
+    we give opportunity you the opportunity to pay by installment.
+    We offer property management services such as: taking care of day-to-day management, rent collection, repairs, tenant screening, and maintenance, ensuring the property is well-maintained and profitable.
+    We offer consultancy services and investment advice, helping clients identify lucrative areas for investment, such as emerging neighborhoods, commercial hotspots, or land that is likely to appreciate in value.
+    We ensure that all legal aspects of buying, selling, or renting property are properly handled, reducing the risk of legal disputes and negotiation of property contracts.
+    We have marketing expertise and can help sellers reach potential buyers through advertising, online platforms, and property exhibitions. 
+    We offer pricing strategies to help clients sell their properties quickly and at the best price.
+    We help mitigate these risks by offering insurance options, property evaluations, and risk management strategies. 
+    We ensure that clients are informed about market trends and potential challenges.
+
+    </p>
+                </div>
+
+                <div className="mb-4">
+                  <p className="font-bold"> In conclusion GEO-EQUIPTMENT CONSULTANT provide comprehensive solutions to a range of challenges, including housing shortages, land disputes, legal complications, property management, and investment risks.</p>
+                  <p>
                   </p>
                 </div>
 
                 <div className="mb-4">
-                  <p className="font-bold">COMMERCIAL REAL ESTATE:</p>
+                  <p className="font-bold"></p>
                   <p>
-                    Properties used for business purposes, such as offices,
-                    shops, and hotels.
                   </p>
                 </div>
 
                 <div className="mb-4">
-                  <p className="font-bold">INDUSTRIAL REAL ESTATE:</p>
+                  <p className="font-bold"></p>
                   <p>
-                    Properties used for manufacturing, production, distribution,
-                    and storage, such as factories and warehouses.
-                  </p>
-                </div>
-
-                <div className="mb-4">
-                  <p className="font-bold">LAND:</p>
-                  <p>
-                    Undeveloped property, agricultural land, and vacant lots.
                   </p>
                 </div>
 
                 <p>
-                  REAL ESTATE transactions involve various professionals,
-                  including real estate agents, appraisers, inspectors, and
-                  lawyers, and the market is influenced by economic factors,
-                  location, and supply and demand dynamics.
                 </p>
               </p>
             </div>
