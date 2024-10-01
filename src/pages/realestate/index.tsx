@@ -107,7 +107,7 @@ function classNames(...classes: any) {
 export default function RealEstate() {
   return (
     <>
-    <NextSeo
+      <NextSeo
         title="Real Estate - Site Plans, Inside Plans, and More"
         description="Explore our range of real estate plans including site plans, inside plans, and more. Perfect for all your real estate needs."
         canonical="https://www.geoequipcam.com/realestate"
@@ -142,159 +142,126 @@ export default function RealEstate() {
           },
         ]}
       />
-    <div className="bg-gray-50">
-      <div>
-        <main>
-          <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div className="py-24 text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900">
-                REAL STATE
-              </h1>
-              <p className="mx-auto mt-4 max-w-3xl text-base text-gray-900">
-                <p className="mb-4">
-                TYPES OF PROPERTIES
-   RESIDENTIAL: The residential real estate market includes apartments, houses, villas, and townhouses. Popular cities for residential properties.
-   COMMERCIAL: Offices, malls, and retail spaces are concentrated in urban areas, particularly Douala and Yaoundé, which are the country’s economic and administrative capitals.
-   INDUSTRIAL: Warehouses, factories, and logistics centers are part of the growing industrial real estate market, especially with infrastructure development in major cities.
-   LAND: Buying land for future development is common, with both urban and rural plots available.
-                </p>
+      <div className="bg-gray-50 dark:bg-gray-900">
+  <div>
+    <main>
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="py-24 text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+            REAL ESTATE
+          </h1>
 
-                <div className="mb-4">
-                  <p className="font-bold">CHALLENGES WE SOLVE</p>
-                  <p>
-    Geo-Equiptment can streamline the land acquisition process by conducting thorough due diligence, legal checks, and navigating the bureaucracy. 
-    We help buyers avoid disputed land or fraudulent transactions.
-    We manage property development projects from start to finish. 
-    We handle architectural designs, construction, project management, and even financing.
-    We solve land  disputes problems, especially in areas where traditional land tenure systems are strong, requiring careful due diligence before purchasing.
-    we give opportunity you the opportunity to pay by installment.
-    We offer property management services such as: taking care of day-to-day management, rent collection, repairs, tenant screening, and maintenance, ensuring the property is well-maintained and profitable.
-    We offer consultancy services and investment advice, helping clients identify lucrative areas for investment, such as emerging neighborhoods, commercial hotspots, or land that is likely to appreciate in value.
-    We ensure that all legal aspects of buying, selling, or renting property are properly handled, reducing the risk of legal disputes and negotiation of property contracts.
-    We have marketing expertise and can help sellers reach potential buyers through advertising, online platforms, and property exhibitions. 
-    We offer pricing strategies to help clients sell their properties quickly and at the best price.
-    We help mitigate these risks by offering insurance options, property evaluations, and risk management strategies. 
-    We ensure that clients are informed about market trends and potential challenges.
+          <p className="mx-auto mt-4 max-w-3xl text-base text-gray-900 dark:text-gray-300">
+            <strong className="dark:text-white">TYPES OF PROPERTIES</strong>
+            <br />
+            <strong className="dark:text-white">RESIDENTIAL:</strong> The residential real estate market includes apartments, houses, villas, and townhouses. Popular cities for residential properties.
+            <br />
+            <strong className="dark:text-white">COMMERCIAL:</strong> Offices, malls, and retail spaces are concentrated in urban areas, particularly Douala and Yaoundé, which are the country’s economic and administrative capitals.
+            <br />
+            <strong className="dark:text-white">INDUSTRIAL:</strong> Warehouses, factories, and logistics centers are part of the growing industrial real estate market, especially with infrastructure development in major cities.
+            <br />
+            <strong className="dark:text-white">LAND:</strong> Buying land for future development is common, with both urban and rural plots available.
+          </p>
 
-    </p>
-                </div>
-
-                <div className="mb-4">
-                  <p className="font-bold"> In conclusion GEO-EQUIPTMENT CONSULTANT provide comprehensive solutions to a range of challenges, including housing shortages, land disputes, legal complications, property management, and investment risks.</p>
-                  <p>
-                  </p>
-                </div>
-
-                <div className="mb-4">
-                  <p className="font-bold"></p>
-                  <p>
-                  </p>
-                </div>
-
-                <div className="mb-4">
-                  <p className="font-bold"></p>
-                  <p>
-                  </p>
-                </div>
-
-                <p>
-                </p>
-              </p>
-            </div>
-
-            {/* Product grid */}
-            <section aria-labelledby="products-heading" className="mt-8">
-              <h2 id="products-heading" className="sr-only">
-                Products
-              </h2>
-
-              <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                {products1.map((product) => (
-                  <a key={product.id} href={product.href} className="group">
-                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                      <Image
-                        className="h-full w-full object-cover object-center group-hover:opacity-75"
-                        src={product.imageSrc}
-                        alt={product.imageAlt}
-                        width={512}
-                        height={1}
-                      />
-                    </div>
-                    <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
-                      <h3>{product.name}</h3>
-                      <p>{product.price}</p>
-                    </div>
-                    <p className="mt-1 text-sm italic text-gray-500">
-                      {product.description}
-                    </p>
-                  </a>
-                ))}
-              </div>
-            </section>
-            {/*
-            <section aria-labelledby="featured-heading" className="relative mt-16 overflow-hidden rounded-lg lg:h-96">
-              <div className="absolute inset-0">
-                <img
-                  src="https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
-                  alt=""
-                  className="h-full w-full object-cover object-center"
-                />
-              </div>
-              <div aria-hidden="true" className="relative h-96 w-full lg:hidden" />
-              <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
-              <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
-                <div>
-                  <h2 id="featured-heading" className="text-xl font-bold text-white">
-                    Workspace Collection
-                  </h2>
-                  <p className="mt-1 text-sm text-gray-300">
-                    Upgrade your desk with objects that keep you organized and clear-minded.
-                  </p>
-                </div>
-                <a
-                  href="#"
-                  className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
-                >
-                  View the collection
-                </a>
-              </div>
-            </section>
-           */}
-            <section
-              aria-labelledby="more-products-heading"
-              className="mt-16 pb-24"
-            >
-              <h2 id="more-products-heading" className="sr-only">
-                More products
-              </h2>
-
-              <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-                {products2.map((product) => (
-                  <a key={product.id} href={product.href} className="group">
-                    <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                      <Image
-                        className="h-full w-full object-cover object-center group-hover:opacity-75"
-                        src={product.imageSrc}
-                        alt={product.imageAlt}
-                        width={512}
-                        height={1}
-                      />
-                    </div>
-                    <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
-                      <h3>{product.name}</h3>
-                      <p>{product.price}</p>
-                    </div>
-                    <p className="mt-1 text-sm italic text-gray-500">
-                      {product.description}
-                    </p>
-                  </a>
-                ))}
-              </div>
-            </section>
+          <div className="mb-4">
+            <p className="font-bold text-gray-900 dark:text-white">CHALLENGES WE SOLVE</p>
+            <p className="text-gray-900 dark:text-gray-300">
+              Geo-Equipment can streamline the land acquisition process by conducting thorough due diligence, legal checks, and navigating the bureaucracy.
+            </p>
+            <ul className="list-disc text-left pl-8 text-gray-900 dark:text-gray-300">
+              <li>We help buyers avoid disputed land or fraudulent transactions.</li>
+              <li>We manage property development projects from start to finish.</li>
+              <li>We handle architectural designs, construction, project management, and even financing.</li>
+              <li>We solve land disputes problems, especially in areas where traditional land tenure systems are strong, requiring careful due diligence before purchasing.</li>
+              <li>We give you the opportunity to pay by installment.</li>
+              <li>
+                We offer property management services such as taking care of day-to-day management, rent collection, repairs, tenant screening, and maintenance, ensuring the property is well-maintained and profitable.
+              </li>
+              <li>
+                We offer consultancy services and investment advice, helping clients identify lucrative areas for investment, such as emerging neighborhoods, commercial hotspots, or land that is likely to appreciate in value.
+              </li>
+              <li>We ensure that all legal aspects of buying, selling, or renting property are properly handled, reducing the risk of legal disputes and negotiating property contracts.</li>
+              <li>
+                We have marketing expertise and can help sellers reach potential buyers through advertising, online platforms, and property exhibitions.
+              </li>
+              <li>We offer pricing strategies to help clients sell their properties quickly and at the best price.</li>
+              <li>We help mitigate these risks by offering insurance options, property evaluations, and risk management strategies.</li>
+              <li>We ensure that clients are informed about market trends and potential challenges.</li>
+            </ul>
           </div>
-        </main>
+
+          <div className="mb-4">
+            <p className="font-bold text-gray-900 dark:text-white">
+              In conclusion, GEO-EQUIPMENT CONSULTANT provides comprehensive solutions to a range of challenges, including housing shortages, land disputes, legal complications, property management, and investment risks.
+            </p>
+          </div>
+        </div>
+
+        {/* Product grid */}
+        <section aria-labelledby="products-heading" className="mt-8">
+          <h2 id="products-heading" className="sr-only">
+            Products
+          </h2>
+
+          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+            {products1.map((product) => (
+              <a key={product.id} href={product.href} className="group">
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
+                  <Image
+                    className="h-full w-full object-cover object-center group-hover:opacity-75"
+                    src={product.imageSrc}
+                    alt={product.imageAlt}
+                    width={512}
+                    height={1}
+                  />
+                </div>
+                <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 dark:text-white">
+                  <h3>{product.name}</h3>
+                  <p>{product.price}</p>
+                </div>
+                <p className="mt-1 text-sm italic text-gray-500 dark:text-gray-400">
+                  {product.description}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* More products */}
+        <section aria-labelledby="more-products-heading" className="mt-16 pb-24">
+          <h2 id="more-products-heading" className="sr-only">
+            More products
+          </h2>
+
+          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+            {products2.map((product) => (
+              <a key={product.id} href={product.href} className="group">
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
+                  <Image
+                    className="h-full w-full object-cover object-center group-hover:opacity-75"
+                    src={product.imageSrc}
+                    alt={product.imageAlt}
+                    width={512}
+                    height={1}
+                  />
+                </div>
+                <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 dark:text-white">
+                  <h3>{product.name}</h3>
+                  <p>{product.price}</p>
+                </div>
+                <p className="mt-1 text-sm italic text-gray-500 dark:text-gray-400">
+                  {product.description}
+                </p>
+              </a>
+            ))}
+          </div>
+        </section>
       </div>
-    </div>
+    </main>
+  </div>
+</div>
+
+
     </>
   );
 }
