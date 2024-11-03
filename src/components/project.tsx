@@ -69,7 +69,7 @@ const projectList = [
     href: "#",
   },
   {
-    imageSrc: "/images/geo70.jpeg",
+    imageSrc: "/images/geo72.jpeg",
     title: "SITE PLAN",
     description: "Detailed layout of a building floor with residential units and common areas.",
     href: "#",
@@ -98,7 +98,7 @@ const Project = () => {
                   tunnel construction,road opening and construction,land surveys and clearing
                 </p>
               </div>
-              <div className="relative mx-auto mt-10 grid max-w-md grid-cols-1 gap-y-8 lg:mx-0 lg:-mb-14 lg:max-w-none lg:grid-cols-3">
+              <div className="relative mx-auto mt-24 grid max-w-md grid-cols-1 gap-y-8 lg:mx-0 lg:-mb-14 lg:max-w-none lg:grid-cols-3">
                 <svg
                   viewBox="0 0 1208 1024"
                   aria-hidden="true"

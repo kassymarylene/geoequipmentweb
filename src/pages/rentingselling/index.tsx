@@ -109,20 +109,20 @@ export default function RentingSelling() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="py-24 text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
-            RENTING AND SELLING OF PUBLIC WORK EQUIPMENT
+            RENTAL AND SALES OF PUBLIC WORKS EQUIPMENT
           </h1>
           <div className="mx-auto mt-4 max-w-3xl text-base text-gray-900 dark:text-gray-300">
             <p className="mb-4">
-              Renting and selling of public work equipment involves the business of providing construction and heavy equipment for temporary use or permanent acquisition by clients in various industries.
+              Rental and sales of public work equipment involves the business of providing construction and heavy equipment for temporary use or permanent acquisition by clients in various industries.
             </p>
             <div className="mb-4">
-              <p className="font-bold text-gray-900 dark:text-white">RENTING</p>
+              <p className="font-bold text-gray-900 dark:text-white">RENTal</p>
               <p className="text-gray-900 dark:text-gray-300">
                 Companies rent out equipment such as excavators, bulldozers, cranes, and trucks to construction firms, municipalities, and other entities for specified periods. This allows clients to use expensive machinery without the high upfront costs of ownership. Rental terms can vary from short-term to long-term leases.
               </p>
             </div>
             <div className="mb-4">
-              <p className="font-bold text-gray-900 dark:text-white">SELLING</p>
+              <p className="font-bold text-gray-900 dark:text-white">Sales</p>
               <p className="text-gray-900 dark:text-gray-300">
                 Businesses also sell equipment to customers who prefer to own rather than rent. This involves new or used equipment transactions, often including maintenance agreements, warranties, and financing options.
               </p>

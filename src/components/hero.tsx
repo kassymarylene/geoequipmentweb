@@ -1,6 +1,5 @@
-// import heroBack from "../../public/next.svg";
 import { Carousel } from "flowbite-react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 const Hero = ({ address, phone, email }: any) => {
   const showMoreBtn = () => {
@@ -13,143 +12,114 @@ const Hero = ({ address, phone, email }: any) => {
 
   return (
     <>
-      <section className="flex flex-col w-full h-screen ">
-        <div className=" relative  h-96 sm:h-96 xl:h-lvh 2xl:h-dvh w-full  bg-no-repeat rounded-b-4xl">
-          <Carousel className="">
+      <section className="relative flex flex-col w-full h-screen">
+        <div className="relative h-96 sm:h-96 xl:h-lvh 2xl:h-dvh w-full bg-no-repeat rounded-b-4xl">
+          <Carousel>
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo1.jpg"}
               alt="house image"
               width={512}
               height={1}
             />
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo2.jpg"}
               alt="house image"
               width={512}
               height={1}
             />
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo3.jpg"}
               alt="house image"
               width={512}
               height={1}
             />
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo4.jpg"}
               alt="house image"
               width={512}
               height={1}
             />
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo5.jpg"}
               alt="house image"
               width={512}
               height={1}
             />
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo6.jpg"}
               alt="house image"
               width={512}
               height={1}
             />
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo7.jpg"}
               alt="house image"
               width={512}
               height={1}
             />
-
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo11.jpeg"}
               alt="house image"
               width={512}
               height={1}
             />
-
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo24.jpeg"}
               alt="house image"
               width={512}
               height={1}
             />
-
             <Image
-              className=" w-full object-contain"
-              src={"/images/geo25.jpeg"}
-              alt="house image"
-              width={512}
-              height={1}
-            />
-
-            <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo30.jpeg"}
               alt="house image"
               width={512}
               height={1}
             />
-
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo19.jpeg"}
               alt="house image"
               width={512}
               height={1}
             />
-
             <Image
-              className=" w-full object-contain"
+              className="w-full object-cover"
               src={"/images/geo12.jpeg"}
               alt="house image"
               width={512}
               height={1}
             />
           </Carousel>
+
+          {/* Slogan Overlay */}
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+            <h2 className="text-white text-3xl md:text-5xl font-bold text-center px-4">
+            &rdquo;From Equipment to Expertise: We Make Projects Possible&rdquo;
+            </h2>
+          </div>
         </div>
 
-        <div className="w-full absolute h-screen ">
-          <div className=" h-screen text-center flex flex-col justify-center items-center">
-            <div className="">
-              <h1 className="font-medium text-2xl text-center mt-24 capitalize">
-                GEO-EQUIPEMENT CONSULTANT COVERS
-                <br />
-                <span className="block mt-4text-gray-800	">Real State</span>
-                <span className="block mt-2">
-                  Renting and Selling of Construction Equipment
-                </span>
-                <span className="block mt-2">Constracts</span>
-                <span className="block mt-2">Negotiation</span>
-                <span className="block mt-2">
-                  Topographic Studies and Performance of Public Procurement
-                </span>
-                <span className="block mt-2">General Trade</span>
-              </h1>
-            </div>
+        {/* Hero Text */}
+        <div className="absolute w-full h-screen flex flex-col items-center justify-center text-center mt-24">
+          <div>
+            <h1 className="font-medium text-2xl md:text-4xl capitalize text-white">
+            Real Estate, Rental and Sales of Public work Equipment, Contracts,
+            Negotiation, <br></br> Topographic Studies, Public Procurement, General Trade
+            </h1>
+          
           </div>
         </div>
       </section>
-
-      {/* <div className=" h-96 sm:h-96 xl:h-lvh 2xl:h-dvh w-full  bg-no-repeat rounded-b-4xl">
-
-      <Carousel >
-        <img src="/images/geo1.jpg" alt="..." />
-        <img src="/images/geo2.jpg" alt="..." />
-        <img src="/images/geo3.jpg" alt="..." />
-        <img src="/images/geo4.jpg" alt="..." />
-        <img src="/images/geo5.jpg" alt="..." />
-        <img src="/images/geo6.jpg" alt="..." />
-        <img src="/images/geo7.jpg" alt="..." />
-      </Carousel>
-    </div> */}
     </>
   );
 };

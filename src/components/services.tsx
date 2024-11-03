@@ -56,7 +56,7 @@ const Services = () => {
               className="w-[45px] h-[45px]"
             />
             <p className="font-bold text-sm leading-6  text-center text-blueCardTitle dark:text-gray-200 ">
-            RENTING AND SELLING OF CONSTRUCTION EQUIPMENT
+            RENTAL AND SALES OF CONSTRUCTION EQUIPMENT
             </p>
           </div>
         </div>
