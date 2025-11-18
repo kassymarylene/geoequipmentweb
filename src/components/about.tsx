@@ -46,7 +46,7 @@ export default function About({
        <br/>we are open 24H/7 from 8H30-17H30 except Saturday:8H30-13H30 
        contact us:
        <span className="font-medium text-base text-center mt-1  text-whiteText">
-        <br/>CALL: 656169787/680941692/678902625<br/>
+        <br/>CALL: 677355166/659796533/673521060<br/>
         <br/> Whatsapp: 677355166/697204969/+4917659729775/690462359<br/>
         </span>
         </p>
