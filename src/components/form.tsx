@@ -23,6 +23,8 @@ const schema = yup.object().shape({
   message: yup.string().required("Message is required"),
 });
 
+type FormFieldName = "firstName" | "lastName" | "email" | "phoneNumber" | "message";
+
 const Form = () => {
   const {
     register,
@@ -82,10 +84,12 @@ const Form = () => {
           className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_30px_60px_rgba(15,23,42,0.8)] backdrop-blur"
         >
           <div className="grid gap-4 sm:grid-cols-2">
-            {[
-              { label: "First Name", name: "firstName", icon: usernameIcon },
-              { label: "Last Name", name: "lastName", icon: usernameIcon },
-            ].map((field) => (
+            {(
+              [
+                { label: "First Name", name: "firstName" as FormFieldName, icon: usernameIcon },
+                { label: "Last Name", name: "lastName" as FormFieldName, icon: usernameIcon },
+              ]
+            ).map((field) => (
               <label key={field.name} className="relative block">
                 <span className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
                   {field.label}

@@ -23,7 +23,6 @@ const Hero = ({ address, phone, email }: any) => {
           indicators={false}
           className="h-full"
           slideInterval={3500}
-          autoPlay
         >
           {slides.map((slide) => (
             <div key={slide} className="relative h-full w-full">
