@@ -5,20 +5,15 @@ import Form from "../components/form";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Project from "@/components/project";
+import ProfessionalProfile from "@/components/professionalProfile";
 import { NextSeo } from "next-seo";
 
 const HomePage = () => {
   return (
     <>
       <NextSeo
-        title="Geo-Consultancy Real Estate"
-        description="GEO-EQUIPEMENT CONSULTANT COVERS
-Real State
-Renting And Selling Of Construction Equipment
-Constracts
-Negotiation
-Topographic Studies And Performance Of Public Procurement
-General Trade"
+        title="Geo-Consultancy Real Estate & Geomatics Expertise"
+        description="GEO-EQUIPMENT CONSULTANT delivers real-estate development, construction-equipment rental, and geospatial surveying services—ranging from contracts and negotiations to topographic studies, cadastral control, and GNSS/geodetic expertise for public infrastructure."
         openGraph={{
           type: "website",
           url: "https://www.geoequipcam.com",
@@ -33,11 +28,17 @@ General Trade"
               alt: "Og Image Alt",
             },
           ],
+          site_name: "Geo-Equipment Consultant",
         }}
         additionalMetaTags={[
           {
             name: "viewport",
             content: "width=device-width, initial-scale=1",
+          },
+          {
+            name: "keywords",
+            content:
+              "Geo-Equipment Consultant, real estate, heavy equipment rental, GNSS geodesy, drone photogrammetry, cadastral surveying, infrastructure mapping",
           },
         ]}
         canonical="https://www.geoequipcam.com"
@@ -58,6 +59,7 @@ General Trade"
         />
         <Team />
         <Services />
+        <ProfessionalProfile />
         <Project />
         <Form />
       </div>

@@ -1,1 +1,75 @@
-    
+{
+  "hero": {
+    "title": "Développement immobilier, équipements publics et géomatique",
+    "subtitle": "Offrir des services multidisciplinaires alliant relevés GNSS/ géodésiques de haute précision, location d’équipements, contrats, négociation et études topographiques pour les infrastructures camerounaises.",
+    "highlights": "Réseaux de contrôle GNSS/géodésiques précis.|Location d’équipements premium et exécution de projets.|Contrats, négociation et leadership en cartographie.",
+    "location": {
+      "label": "Localisation",
+      "value": "Yaoundé, Cameroun"
+    },
+    "call": {
+      "label": "Appelez",
+      "numbers": "677 355 166|659 796 533|673 521 060"
+    },
+    "contact": {
+      "label": "WhatsApp / Email",
+      "whatsapp": "677 355 166 / 697 204 969|+49 176 597 29775 / 690 462 359"
+    }
+  },
+  "services": {
+    "realEstate": {
+      "title": "Conseil immobilier",
+      "description": "Développements premium, études de localisation, rapports de faisabilité et support marketing pour les actifs résidentiels, commerciaux et mixtes.",
+      "badge": "Planification & livraison"
+    },
+    "equipment": {
+      "title": "Location et vente d’équipements",
+      "description": "Location de gros engins (bulldozers, niveleuses, compacteurs) et stratégies d’acquisition adaptées aux besoins courts et longs termes.",
+      "badge": "Flotte de travaux publics"
+    },
+    "contracts": {
+      "title": "Contrats & négociations",
+      "description": "Rédaction, revue et exécution d’accords couvrant l’acquisition de terrains, les approvisionnements et la conformité aux marchés publics.",
+      "badge": "Atténuation des risques"
+    },
+    "trade": {
+      "title": "Négociation & commerce général",
+      "description": "Support stratégique pour les transactions immobilières, les partenariats gouvernementaux et l’approvisionnement en biens et services.",
+      "badge": "Liaison gouvernementale"
+    },
+    "studies": {
+      "title": "Études topographiques & expertises",
+      "description": "Géodésie GNSS, photogrammétrie par drone, levés cadastraux et modélisation de terrain pour les infrastructures et l’administration foncière.",
+      "badge": "Intelligence spatiale"
+    },
+    "label": "Nos Services",
+    "heading": "Solutions complètes pour l’immobilier, les équipements et la géomatique",
+    "subheading": "De la cartographie de précision et les dossiers cadastraux aux flottes de location et aux contrats, Geo-Equipment Consultant soutient les développements, infrastructures et administrations foncières camerounaises.",
+    "explore": "Explorez →"
+  },
+  "about": {
+    "story": "Fondé en 2014 par Ayongaba Francois Agwenam, Geo-Equipment Consultant allie précision d’ingénierie et esprit entrepreneurial. Nous proposons des programmes GNSS/géodésiques, de la photogrammétrie par drone, des services cadastraux et la location d’équipements pour faire avancer les travaux publics et privés à temps et en toute confiance.",
+    "credentials": "Certifications",
+    "highlights": "Réseaux de contrôle GNSS/géodésiques précis.|Photogrammétrie par drone pour des analyses 3D et des plans cadastraux nets.|Services de négociation, contrats et commerce général qui sécurisent les achats.",
+    "mission": "Piloter les programmes de topographie, de cadastre et d’infrastructures du Cameroun avec des contrats intelligents, des géodésies fiables et un accompagnement réactif qui inspire la confiance.",
+    "presence": "Une équipe dédiée de 17 experts en géodésie, photogrammétrie, négociation et administration coordonne les projets nationaux pour garantir conformité et précision topographique."
+  },
+  "team": {
+    "title": "17 spécialistes prêts à agir 24/7",
+    "description": "Une équipe multidisciplinaire d’ingénieurs géodésiques, géomètres, négociateurs et planificateurs qui maintient les projets publics dans les délais et les budgets.",
+    "contactTitle": "Contact",
+    "phoneLabel": "Téléphone",
+    "whatsappLabel": "WhatsApp",
+    "phoneNumbers": "677 355 166|659 796 533|673 521 060",
+    "whatsappNumbers": "677 355 166|697 204 969|+49 176 597 29775|690 462 359"
+  },
+  "project": {
+    "label": "Projets & résultats",
+    "heading": "Études, déblaiement et planifications de sites incomparables",
+    "subheading": "Nos travaux couvrent contrôle GNSS, tunnelier, débroussaillage et cartographie pour accompagner les développements complexes au Cameroun.",
+    "status": {
+      "ongoing": "En cours",
+      "completed": "Terminé"
+    }
+  }
+}

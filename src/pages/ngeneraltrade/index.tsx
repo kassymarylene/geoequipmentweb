@@ -1,253 +1,84 @@
-import Image, { StaticImageData } from "next/image";
+import { NextSeo } from "next-seo";
 
-const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
-
-const products1 = [
-  {
-    id: 1,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/",
-    imageAlt:
-      "Person using a pen to cross a task off a productivity paper card.",
-  },
-  {
-    id: 2,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/",
-    imageAlt: "Paper card sitting upright in walnut card holder on desk.",
-  },
-  {
-    id: 3,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/",
-    imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
-  },
-  // More products...
-  {
-    id: 4,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/",
-    imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
-  },
-  {
-    id: 5,
-    name: "",
-    href: "*",
-    price: "",
-    description: "",
-    imageSrc: "/",
-    imageAlt:
-      "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
-  },
-  {
-    id: 6,
-    name: "",
-    href: "*",
-    price: "",
-    description: "",
-    imageSrc: "/",
-    imageAlt:
-      "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
-  },
-  // More products...
-];
-const products2 = [
-  {
-    id: 17,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/",
-    imageAlt:
-      "Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.",
-  },
-  {
-    id: 18,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/",
-    imageAlt:
-      "Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.",
-  },
-  {
-    id: 19,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/",
-    imageAlt:
-      "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
-  },
-  // More products...
+const negotiations = [
+  "Preparation: Market intelligence and property valuation research.",
+  "Relationship building: Transparent proposals that build trust.",
+  "Communication: Clearly defined needs with flexible terms.",
+  "Due diligence: Legal, survey, and financial review before closing.",
 ];
 
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(" ");
-}
+const servicePoints = [
+  {
+    title: "Real Estate Negotiation",
+    detail: "Buy, sell, lease, and manage properties with legal oversight and tenant screening.",
+  },
+  {
+    title: "General Trade",
+    detail: "Sourcing materials, equipment, and commodities for projects and government programs.",
+  },
+  {
+    title: "Public Work Equipment",
+    detail: "Equip rental agreements, pricing, and maintenance packages for road/bridge campaigns.",
+  },
+];
 
 export default function NgeneralTrade() {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900">
-  <div>
-    <main>
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="py-24 text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
-            NEGOTIATION AND GENERAL TRADE
-          </h1>
-          <div className="mx-auto mt-2 max-w-3xl text-base text-gray-900 dark:text-gray-300">
-            <p className="mb-4">
-              GEO-EQUIOMENT CONSULTANT can negotiate any business for you in
-              Cameroon be it with the government or business administrations. We
-              also get any goods of your choice for you.
+    <>
+      <NextSeo
+        title="Negotiation & General Trade"
+        description="Geo-Equipment Consultant supports negotiation, procurement, and general trade for real estate, infrastructure, and public works."
+        canonical="https://www.geoequipcam.com/ngeneraltrade"
+      />
+
+      <div className="bg-slate-950 text-white">
+        <section className="px-6 py-16">
+          <div className="mx-auto max-w-6xl space-y-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.6em] text-cyan-300">
+              Negotiation &amp; General Trade
             </p>
-
-            <div className="mb-4">
-              <p className="font-bold dark:text-white">REAL ESTATE NEGOTIATION</p>
-              <p>
-                <br />
-                PREPARATION: Research market and property values.
-                <br />
-                <br />
-                REPPORT: Build a positive relationship.
-                <br />
-                <br />
-                COMMUNICATION: Clearly state needs and limits.
-                <br />
-                <br />
-                FLEXIBILITY: Be open to compromise.
-                <br />
-                <br />
-                DUE DILIGENCE: Inspections, appraisals, legal review.
-              </p>
+            <h1 className="text-4xl font-semibold">
+              Strategic negotiation, procurement, and sourcing power for Cameroon
+            </h1>
+            <p className="text-sm text-white/70">
+              Support for land deals, equipment purchasing, public-private partnerships, and contractual negotiations that secure your project’s outcomes.
+            </p>
+            <div className="grid gap-4 md:grid-cols-2">
+              {negotiations.map((item) => (
+                <article
+                  key={item}
+                  className="rounded-3xl border border-white/10 bg-white/5 p-4 text-sm text-white/80"
+                >
+                  <h3 className="text-xs font-semibold uppercase tracking-[0.4em] text-white/60">Step</h3>
+                  <p className="mt-2 text-sm text-white">{item}</p>
+                </article>
+              ))}
             </div>
-
-            <div className="mb-3">
-              <p className="font-bold dark:text-white">GENERAL TRADE IN REAL ESTATE</p>
-              <p>
-                <br />
-                TRANSACTION: Buy, sell, lease, rent properties.
-                <br />
-                <br />
-                MANAGEMENT: Oversee maintenance and operations.
-                <br />
-                <br />
-                DEVELOPMENT: Build or renovate properties.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold dark:text-white">
-                RENTING OF PUBLIC WORK EQUIPMENT NEGOTIATION AND TRADE
-              </p>
-              <p>
-                Negotiation in selling and renting public work equipment involves
-                an agreement where one party (the owner) agrees to sell or rent
-                out equipment to another party (the lessee) for a specified
-                period and price.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold dark:text-white">The key elements are:</p>
-              <p>
-                <br />
-                INVENTORY: Track and maintain equipment.
-                <br />
-                <br />
-                PRICING: Set competitive rates.
-                <br />
-                <br />
-                CONTRACT: Clear terms and responsibilities.
-                <br />
-                <br />
-                MARKETING: Online platforms, trade shows.
-                <br />
-                <br />
-                CUSTOMER SERVICE: Provide reliable support.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Product grid */}
-        <section aria-labelledby="products-heading" className="mt-8">
-          <h2 id="products-heading" className="sr-only">
-            Products
-          </h2>
-
-          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-            {products1.map((product) => (
-              <a key={product.id} href={product.href} className="group">
-                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                  <Image
-                    className="h-full w-full object-cover object-center group-hover:opacity-75"
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    width={512}
-                    height={1}
-                  />
-                </div>
-                <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 dark:text-white">
-                  <h3>{product.name}</h3>
-                  <p>{product.price}</p>
-                </div>
-                <p className="mt-1 text-sm italic text-gray-500 dark:text-gray-400">
-                  {product.description}
-                </p>
-              </a>
-            ))}
           </div>
         </section>
 
-        <section aria-labelledby="more-products-heading" className="mt-16 pb-24">
-          <h2 id="more-products-heading" className="sr-only">More products</h2>
-
-          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-            {products2.map((product) => (
-              <a key={product.id} href={product.href} className="group">
-                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                  <Image
-                    className="h-full w-full object-cover object-center group-hover:opacity-75"
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    width={512}
-                    height={1}
-                  />
-                </div>
-                <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 dark:text-white">
-                  <h3>{product.name}</h3>
-                  <p>{product.price}</p>
-                </div>
-                <p className="mt-1 text-sm italic text-gray-500 dark:text-gray-400">
-                  {product.description}
-                </p>
-              </a>
-            ))}
+        <section className="px-6 pb-20">
+          <div className="mx-auto max-w-6xl space-y-10">
+            <div className="rounded-[32px] border border-white/20 bg-white/5 p-6 shadow-2xl shadow-black/60">
+              <h2 className="text-2xl font-semibold text-white">Key Service Areas</h2>
+              <div className="mt-6 grid gap-6 md:grid-cols-3">
+                {servicePoints.map((point) => (
+                  <article key={point.title} className="space-y-2 rounded-2xl border border-white/10 bg-white/10 p-4 text-sm">
+                    <h3 className="text-lg font-semibold text-white">{point.title}</h3>
+                    <p className="text-white/70">{point.detail}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-[32px] border border-white/20 bg-gradient-to-br from-cyan-500/20 to-slate-900/40 p-6 text-sm text-white shadow-2xl shadow-black/60">
+              <h3 className="text-xl font-semibold">Ready for your deal flow</h3>
+              <p className="mt-3 text-white/80">
+                Whether it is a government procurement, private equity transaction, or a multinational partnership, Geo-Equipment Consultant ensures compliance, clarity, and momentum.
+              </p>
+            </div>
           </div>
         </section>
       </div>
-    </main>
-  </div>
-</div>
-
+    </>
   );
 }

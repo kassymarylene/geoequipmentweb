@@ -1,262 +1,70 @@
 import { NextSeo } from "next-seo";
-import Image, { StaticImageData } from "next/image";
 
-const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
-
-const products1 = [
+const studyAreas = [
   {
-    id: 1,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/images/geo76.jpeg",
-    imageAlt:
-      "Person using a pen to cross a task off a productivity paper card.",
+    title: "Soil &amp; Rock Mechanics",
+    body: "Understanding soil strength, rock mass behavior, and site stability for foundations, slopes, and tunnels.",
   },
   {
-    id: 2,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/images/geo67.jpeg",
-    imageAlt: "Paper card sitting upright in walnut card holder on desk.",
+    title: "Foundation Engineering",
+    body: "Shallow/deep foundation layouts, bearing capacity assessment, and construction monitoring.",
   },
   {
-    id: 3,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/images/geo74.jpeg",
-    imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
-  },
-  // More products...
-  {
-    id: 4,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/images/geo19.jpeg",
-    imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
+    title: "Ground Improvement &amp; Earthquake Engineering",
+    body: "Compaction, grouting, and seismic resilience strategies that protect people and assets.",
   },
   {
-    id: 5,
-    name: "",
-    href: "*",
-    price: "",
-    description: "",
-    imageSrc: "/images/geo63.jpeg",
-    imageAlt: "",
+    title: "Survey-grade Topographic Mapping",
+    body: "Drone photogrammetry, GNSS, and total-station campaigns for detailed contours, DEMs, and orthomosaics.",
   },
-  {
-    id: 6,
-    name: "",
-    href: "*",
-    price: "",
-    description: "",
-    imageSrc: "/images/geo72.jpeg",
-    imageAlt: "",
-  },
-  // More products...
 ];
-const products2 = [
-  {
-    id: 7,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/images/geo70.jpeg",
-    imageAlt: "",
-  },
-  {
-    id: 8,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/images/geo73.jpeg",
-    imageAlt: "",
-  },
-  {
-    id: 9,
-    name: "",
-    href: "#",
-    price: "",
-    description: "",
-    imageSrc: "/images/geo69.jpeg",
-    imageAlt: "",
-  },
-  // More products...
-];
-
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Studies() {
   return (
     <>
-    <NextSeo
-        title="Studies and Surveys for Construction Projects"
-        description="Expert studies and surveys including geotechnical surveys, environmental impact assessments, foundation analysis, and more to ensure safe and efficient construction."
+      <NextSeo
+        title="Geomatics & Survey Studies"
+        description="Geo-Equipment Consultant delivers soil mechanics, topographic, and geotechnical studies for infrastructure, real estate, and public works."
         canonical="https://www.geoequipcam.com/studies"
-        openGraph={{
-          url: 'https://www.geoequipcam.com/studies',
-          title: 'Studies and Surveys for Construction Projects',
-          description:
-            'Expert studies and surveys including geotechnical surveys, environmental impact assessments, foundation analysis, and more to ensure safe and efficient construction.',
-          images: [
-            {
-              url: 'https://www.geoequipcam.com/images/geo76.jpeg',
-              width: 800,
-              height: 600,
-              alt: 'Geotechnical Survey in Progress',
-            },
-            {
-              url: 'https://www.geoequipcam.com/images/geo67.jpeg',
-              width: 800,
-              height: 600,
-              alt: 'Environmental Impact Assessment Team',
-            },
-            // More images...
-          ],
-          site_name: 'geoequipcam',
-        }}
       />
-   <div className="bg-gray-50 dark:bg-gray-900">
-  <div>
-    <main>
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="py-24 text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
-            STUDIES
-          </h1>
-          <div className="mx-auto mt-4 max-w-3xl text-base text-gray-900 dark:text-gray-300">
-            <p className="mb-4">
-              We study the lands to ensure the stability and safety of structures like buildings, bridges, dams, and tunnels.
+
+      <div className="bg-slate-950 text-white">
+        <section className="px-6 py-16">
+          <div className="mx-auto max-w-6xl space-y-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.6em] text-cyan-300">
+              Geomatics Studies
             </p>
-
-            <p className="font-bold dark:text-white"> Key Areas of Study:</p>
-            <div className="mb-4">
-              <p className="font-bold dark:text-white">Soil Mechanics:</p>
-              <p>
-                Understanding the properties and behavior of soil, including its strength, compressibility, and permeability.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold dark:text-white">Rock Mechanics:</p>
-              <p>
-                Study of the properties and behavior of rock masses, essential for tunneling and mining operations.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold dark:text-white">Foundation Engineering:</p>
-              <p>
-                Design and analysis of foundations for various structures, including shallow and deep foundations.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold dark:text-white">Slope Stability:</p>
-              <p>
-                Analysis and stabilization of natural and artificial slopes to prevent landslides and erosion.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold dark:text-white">Earthquake Engineering:</p>
-              <p>
-                Designing structures to withstand seismic activities and understanding soil-structure interaction during earthquakes.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold dark:text-white">Ground Improvement:</p>
-              <p>
-                Techniques to enhance the properties of soil, such as compaction, grouting, and soil stabilization.
-              </p>
-            </div>
-
-            <p className="dark:text-gray-300">
-              REAL ESTATE transactions involve various professionals, including real estate agents, appraisers, inspectors, and lawyers, and the market is influenced by economic factors, location, and supply and demand dynamics.
+            <h1 className="text-4xl font-semibold sm:text-5xl">
+              Terrain, geotechnical, and cadastral intelligence for confident infrastructure
+            </h1>
+            <p className="text-sm text-white/70">
+              From airports to university campuses, we combine GNSS/geodetic control with drone photogrammetry and structural diagnostics for safe planning.
             </p>
-          </div>
-        </div>
-
-        {/* Product grid */}
-        <section aria-labelledby="products-heading" className="mt-8">
-          <h2 id="products-heading" className="sr-only">
-            Products
-          </h2>
-
-          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-            {products1.map((product) => (
-              <a key={product.id} href={product.href} className="group">
-                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                  <Image
-                    className="h-full w-full object-cover object-center group-hover:opacity-75"
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    width={512}
-                    height={1}
-                  />
-                </div>
-                <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 dark:text-white">
-                  <h3>{product.name}</h3>
-                  <p>{product.price}</p>
-                </div>
-                <p className="mt-1 text-sm italic text-gray-500 dark:text-gray-400">
-                  {product.description}
-                </p>
-              </a>
-            ))}
           </div>
         </section>
 
-        <section
-          aria-labelledby="more-products-heading"
-          className="mt-16 pb-24"
-        >
-          <h2 id="more-products-heading" className="sr-only">
-            More products
-          </h2>
-
-          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-            {products2.map((product) => (
-              <a key={product.id} href={product.href} className="group">
-                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                  <Image
-                    className="h-full w-full object-cover object-center group-hover:opacity-75"
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    width={512}
-                    height={1}
-                  />
-                </div>
-                <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 dark:text-white">
-                  <h3>{product.name}</h3>
-                  <p>{product.price}</p>
-                </div>
-                <p className="mt-1 text-sm italic text-gray-500 dark:text-gray-400">
-                  {product.description}
-                </p>
-              </a>
-            ))}
+        <section className="px-6 pb-16">
+          <div className="mx-auto max-w-6xl space-y-6">
+            <div className="grid gap-6 md:grid-cols-2">
+              {studyAreas.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white shadow-xl shadow-black/50"
+                >
+                  <h2 className="text-lg font-semibold text-white">{item.title}</h2>
+                  <p className="mt-3 text-white/70">{item.body}</p>
+                </article>
+              ))}
+            </div>
+            <article className="rounded-[32px] border border-white/20 bg-gradient-to-br from-cyan-500/20 to-slate-900/40 p-6 text-sm text-white shadow-2xl shadow-black/60">
+              <h3 className="text-2xl font-semibold">Digital Surveying Capabilities</h3>
+              <p className="mt-3 text-white/80">
+                GNSS control networks, PPK/RTK-enabled drones, advanced SfM processing, and orthomosaics deliver deliverables that planners and regulators can trust.
+              </p>
+            </article>
           </div>
         </section>
       </div>
-    </main>
-  </div>
-</div>
-
     </>
   );
 }

@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import ThemeChanger from './themeChanger';
-import { Span } from 'next/dist/trace';
+import LanguageSwitcher from "./languageSwitcher";
+import ThemeChanger from "./themeChanger";
+import { Span } from "next/dist/trace";
 import { useRouter } from 'next/router';
 import Image, { StaticImageData } from 'next/image';
 
@@ -104,12 +105,9 @@ const Header = () => {
       </ul>
       )}
 
-      <p
-        style={{ color: `${headerText}` }}
-        className="hidden sm:flex text-sm font-bold ml-10 mr-5 hover:text-orange-500 cursor-pointer"
-      >
-        Get In Touch
-      </p>
+      <div className="hidden items-center gap-3 sm:flex">
+        <LanguageSwitcher />
+      </div>
       {/* <div className="mr-10">
         <ThemeChanger />
       </div> */}
@@ -126,42 +124,32 @@ const Header = () => {
       <div
         className={
           header
-            ? 'sm:hidden absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center w-full h-screen bg-[#020308ea] text-center ease-in duration-300'
-            : 'sm:hidden absolute top-0 right-0 bottom-0 left-[-100%] flex justify-center items-center w-full h-screen bg-[#020308ea] text-center ease-in duration-300'
+            ? "sm:hidden fixed inset-0 flex flex-col justify-center items-center bg-gradient-to-br from-black/90 via-black/80 to-slate-900/90 backdrop-blur-[30px] text-center transition duration-300"
+            : "sm:hidden fixed inset-0 flex flex-col justify-center items-center bg-gradient-to-br from-black/0 via-black/0 to-black/0 backdrop-blur-[30px] opacity-0 pointer-events-none transition duration-300"
         }
       >
-        <ul
-          style={{ color: `${headerText}` }}
-          className="text-sm font-bold 
-      "
-        >
-          <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#about-container" onClick={handleMobileHeader}>
-              About
-            </Link>
-          </li>
-          <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#services" onClick={handleMobileHeader}>
-              Services
-            </Link>
-          </li>
-          <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#deals" onClick={handleMobileHeader}>
-              Deals
-            </Link>
-          </li>
-          <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#reviews" onClick={handleMobileHeader}>
-              Reviews
-            </Link>
-          </li>
-          <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#contact" onClick={handleMobileHeader}>
-              Contact
-            </Link>
-          </li>
-          
-        </ul>
+        <div className="absolute inset-0 bg-black/80" aria-hidden />
+        <div className="relative flex h-full w-full flex-col items-center justify-center gap-6">
+          <ul className="flex h-full w-full flex-col items-center justify-center gap-8 text-3xl font-semibold tracking-[0.35em] text-white">
+            {[
+              { label: "About", target: "#about-container" },
+              { label: "Services", target: "#services" },
+              { label: "Team", target: "#team" },
+              { label: "Projects", target: "#projects" },
+              { label: "Contact", target: "#contact" },
+            ].map((link) => (
+              <li key={link.label} className="w-full">
+                <Link
+                  href={link.target}
+                  onClick={handleMobileHeader}
+                  className="block w-full rounded-2xl bg-white/10 px-6 py-4 text-center text-lg uppercase tracking-[0.4em] transition hover:bg-white/20"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

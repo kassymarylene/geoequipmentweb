@@ -1,17 +1,9 @@
 import { Card } from "flowbite-react";
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Dialog, DialogPanel, Radio, RadioGroup } from "@headlessui/react";
-import {
-  Bars3Icon,
-  XMarkIcon as XMarkIconOutline,
-} from "@heroicons/react/24/outline";
-import {
-  CheckIcon,
-  XMarkIcon as XMarkIconMini,
-} from "@heroicons/react/20/solid";
+import { useTranslations } from "next-intl";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -81,95 +73,63 @@ function classNames(...classes: any) {
 }
 
 const Project = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const t = useTranslations("project");
   return (
-    <div id="projects"  className="bg-white">
-      <main>
-        <div className="isolate overflow-hidden">
-          <div className="flow-root bg-gray-900 py-16 sm:pt-32 lg:pb-0">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="relative z-10">
-                <h1 className="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight text-white">
-                  Our Various Projects
-                </h1>
-                <p className="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-white/60">
-                  These are other projects Geo-equipment consultant carries on like;<br/>
-                  tunnel construction,road opening and construction,land surveys and clearing
-                </p>
-              </div>
-              <div className="relative mx-auto mt-24 grid max-w-md grid-cols-1 gap-y-8 lg:mx-0 lg:-mb-14 lg:max-w-none lg:grid-cols-3">
-                <svg
-                  viewBox="0 0 1208 1024"
-                  aria-hidden="true"
-                  className="absolute -bottom-48 left-1/2 h-[64rem] -translate-x-1/2 translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] lg:-top-48 lg:bottom-auto lg:translate-y-0"
-                >
-                  <ellipse
-                    cx={604}
-                    cy={512}
-                    fill="url(#d25c25d4-6d43-4bf9-b9ac-1842a30a4867)"
-                    rx={604}
-                    ry={512}
-                  />
-                  <defs>
-                    <radialGradient id="d25c25d4-6d43-4bf9-b9ac-1842a30a4867">
-                      <stop stopColor="#7775D6" />
-                      <stop offset={1} stopColor="#E935C1" />
-                    </radialGradient>
-                  </defs>
-                </svg>
-              </div>
-              <div className="my-11">
-                <Swiper
-                  effect={"coverflow"}
-                  grabCursor={true}
-                  centeredSlides={true}
-                  slidesPerView={"auto"}
-                  autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  }}
-                  coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 10,
-                    modifier: 1,
-                    slideShadows: true,
-                  }}
-                  pagination={true}
-                  modules={[EffectCoverflow, Pagination, Autoplay]}
-                  className="mySwiper"
-                >
-                  {projectList.map(
-                    (item: {
-                      imageSrc: string;
-                      title: string;
-                      description: string;
-                      href: string;
-                    }) => (
-                      <SwiperSlide key={item.imageSrc}>
-                        <Card
-                          className="max-w-sm"
-                          imgAlt="Meaningful alt text for an image that is not purely decorative"
-                          imgSrc={item.imageSrc}
-                        >
-                          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            {item.title}
-                          </h5>
-                          <p className="font-normal text-gray-700 dark:text-gray-400">
-                            {item.description}
-                          </p>
-                        </Card>
-                      </SwiperSlide>
-                    )
-                  )}
-                </Swiper>
-              </div>
-            </div>
-          </div>
+    <section
+      id="projects"
+      className="bg-gradient-to-br from-brand-900 via-brand-900 to-brand-800 py-16 text-white"
+    >
+      <div className="mx-auto max-w-6xl space-y-10 px-6">
+        <div className="space-y-4 text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.6em] text-cyan-300">
+            {t("label")}
+          </p>
+          <h2 className="text-4xl font-semibold text-white sm:text-5xl">
+            {t("heading")}
+          </h2>
+          <p className="text-sm text-white/70">{t("subheading")}</p>
         </div>
-      </main>
-    </div>
+
+        <div className="relative rounded-[32px] border border-white/20 bg-slate-950 p-6 shadow-[0_30px_80px_rgba(2,6,23,0.9)]">
+          <Swiper
+            effect={"coverflow"}
+            grabCursor
+            centeredSlides
+            slidesPerView={"auto"}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            coverflowEffect={{
+              rotate: 40,
+              stretch: 0,
+              depth: 120,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            pagination
+            modules={[EffectCoverflow, Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            {projectList.map((item) => (
+              <SwiperSlide key={item.imageSrc}>
+                <Card
+                  className="max-w-sm bg-slate-900/80"
+                  imgAlt={item.title}
+                  imgSrc={item.imageSrc}
+                >
+                  <h5 className="text-2xl font-semibold leading-tight text-white">{item.title}</h5>
+                  <p className="mt-2 text-sm text-white/80">{item.description}</p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.4em] text-white/60">
+                  {item.href === "#" ? t("status.ongoing") : t("status.completed")}
+                  </p>
+                </Card>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+    </section>
   );
 };
 

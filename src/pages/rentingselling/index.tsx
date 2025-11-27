@@ -1,238 +1,140 @@
+import Image from "next/image";
 import { NextSeo } from "next-seo";
-import Image, { StaticImageData } from "next/image";
 
-const currencies = ["CAD", "USD", "AUD", "EUR", "GBP"];
-
-const products1 = [
-  {
-    id: 1,
-    name: "BullDozer",
-    href: "#",
-    price: "100.000FCFA/h",
-    description: "500.000FCFA/6d",
-    imageSrc: "/images/geo31.jpeg",
-    imageAlt:
-      "Person using a pen to cross a task off a productivity paper card.",
-  },
-  {
-    id: 2,
-    name: "BullDozer",
-    href: "#",
-    price: "100.000FCFA/h",
-    description: "500.000FCFA/6d",
-    imageSrc: "/images/geo48.jpeg",
-    imageAlt: "Paper card sitting upright in walnut card holder on desk.",
-  },
-  {
-    id: 3,
-    name: "Frond Wild Holder",
-    href: "#",
-    price: "75000FCFA/h",
-    description: "",
-    imageSrc: "/images/geo50.jpeg",
-    imageAlt:
-      "Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.",
-  },
-  // More products...
-];
-const products2 = [
-  {
-    id: 14,
-    name: "Frond Wild Holder",
-    href: "#",
-    price: "75000FCFA/h",
-    description: "",
-    imageSrc: "/images/geo36.jpeg",
-    imageAlt:
-      "Close up of long kettle spout pouring boiling water into pour-over coffee mug with frothy coffee.",
-  },
-  {
-    id: 15,
-    name: "Compactor and Grader",
-    href: "#",
-    price: "75000FCFA/h",
-    description: "",
-    imageSrc: "/images/geo61.jpeg",
-    imageAlt:
-      "Extra large black leather workspace pad on desk with computer, wooden shelf, desk organizer, and computer peripherals.",
-  },
-  {
-    id: 16,
-    name: "Compactor and Grader",
-    href: "#",
-    price: "75000FCFA/h",
-    description: "",
-    imageSrc: "/images/geo62.jpeg",
-    imageAlt:
-      "Leather long wallet held open with hand-stitched card dividers, full-length bill pocket, and simple tab closure.",
-  },
-  // More products...
+const equipmentHighlights = [
+  "Fleet of bulldozers, graders, compactors, cranes, and excavators.",
+  "Flexible rental by the hour, day, or long-term contract.",
+  "Maintenance, transport, and operator coordination included.",
 ];
 
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(" ");
-}
+const equipmentAssets = [
+  {
+    name: "BullDozer Series",
+    price: "100,000 FCFA / h",
+    duration: "500,000 FCFA / 6d",
+    image: "/images/geo31.jpeg",
+  },
+  {
+    name: "Frond Wild Holder",
+    price: "75,000 FCFA / h",
+    duration: "500,000 FCFA / 6d",
+    image: "/images/geo36.jpeg",
+  },
+  {
+    name: "Compactors &amp; Graders",
+    price: "75,000 FCFA / h",
+    duration: "480,000 FCFA / 6d",
+    image: "/images/geo61.jpeg",
+  },
+  {
+    name: "Loaders &amp; Misc. Fleet",
+    price: "Starts at 65,000 FCFA / h",
+    duration: "Negotiable packages",
+    image: "/images/geo48.jpeg",
+  },
+];
+
+const faq = [
+  {
+    label: "Renting",
+    body: "Temporary deployment for road openings, site prep, or government corridors with an inclusive operating plan.",
+  },
+  {
+    label: "Sales",
+    body: "New and reconditioned units, financing support, and warranties tailored for developers or municipalities.",
+  },
+  {
+    label: "Logistics",
+    body: "Transport, insurance, and equipment checks before every deployment ensure uptime and compliance.",
+  },
+];
 
 export default function RentingSelling() {
   return (
     <>
-    <NextSeo
-        title="Renting and Selling of Public Work Equipment"
-        description="Explore our comprehensive range of public work equipment available for rent or purchase. From bulldozers to compactors, we offer high-quality machinery for your construction needs."
+      <NextSeo
+        title="Construction Equipment Rentals & Sales"
+        description="Geo-Equipment Consultant supplies bulldozers, graders, compactors, and cranes for rent or purchase backed by logistics and GNSS site planning."
         canonical="https://www.geoequipcam.com/rentingselling"
         openGraph={{
-          url: 'https://www.geoequipcam.com/rentingselling',
-          title: 'Renting and Selling of Public Work Equipment',
+          url: "https://www.geoequipcam.com/rentingselling",
+          title: "Public Works Equipment Rental & Sales",
           description:
-            'Explore our comprehensive range of public work equipment available for rent or purchase. From bulldozers to compactors, we offer high-quality machinery for your construction needs.',
-          images: [
-            {
-              url: 'https://www.geoequipcam.com/images/geo31.jpeg',
-              width: 800,
-              height: 600,
-              alt: 'BullDozer',
-            },
-            {
-              url: 'https://www.geoequipcam.com/images/geo48.jpeg',
-              width: 800,
-              height: 600,
-              alt: 'BullDozer',
-            },
-            // More images...
-          ],
-          site_name: 'geoequipcam',
+            "Rent or buy heavy equipment with maintenance, transport, and surveying support.",
+          site_name: "Geo-Equipment Consultant",
         }}
       />
-    <div className="bg-gray-50 dark:bg-gray-900">
-  <div>
-    <main>
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="py-24 text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
-            RENTAL AND SALES OF PUBLIC WORKS EQUIPMENT
-          </h1>
-          <div className="mx-auto mt-4 max-w-3xl text-base text-gray-900 dark:text-gray-300">
-            <p className="mb-4">
-              Rental and sales of public work equipment involves the business of providing construction and heavy equipment for temporary use or permanent acquisition by clients in various industries.
-            </p>
-            <div className="mb-4">
-              <p className="font-bold text-gray-900 dark:text-white">RENTal</p>
-              <p className="text-gray-900 dark:text-gray-300">
-                Companies rent out equipment such as excavators, bulldozers, cranes, and trucks to construction firms, municipalities, and other entities for specified periods. This allows clients to use expensive machinery without the high upfront costs of ownership. Rental terms can vary from short-term to long-term leases.
+
+      <div className="bg-slate-950 text-white">
+        <section className="relative overflow-hidden px-6 py-16">
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/30 via-transparent to-slate-950/70" />
+          <div className="relative mx-auto max-w-6xl space-y-8 lg:flex lg:items-center lg:justify-between">
+            <div className="space-y-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.6em] text-cyan-300">
+                Equipment Rental &amp; Sales
               </p>
-            </div>
-            <div className="mb-4">
-              <p className="font-bold text-gray-900 dark:text-white">Sales</p>
-              <p className="text-gray-900 dark:text-gray-300">
-                Businesses also sell equipment to customers who prefer to own rather than rent. This involves new or used equipment transactions, often including maintenance agreements, warranties, and financing options.
+              <h1 className="text-4xl font-semibold sm:text-5xl">
+                Bulldozers, graders, and excavators ready for public work projects
+              </h1>
+              <p className="text-sm text-white/80">
+                We pair heavy equipment availability with GNSS-guided site planning, transport logistics, and operator coordination so every job keeps moving.
               </p>
+              <div className="flex flex-wrap gap-4">
+                {equipmentHighlights.map((highlight) => (
+                  <span
+                    key={highlight}
+                    className="rounded-full border border-white/30 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em]"
+                  >
+                    {highlight}
+                  </span>
+                ))}
+              </div>
             </div>
-
-            <p className="font-bold text-gray-900 dark:text-white">KEY ASPECTS:</p>
-
-            <div className="mb-4">
-              <p className="font-bold text-gray-900 dark:text-white">Equipment Range</p>
-              <p className="text-gray-900 dark:text-gray-300">
-                Includes heavy machinery, construction tools, and specialized vehicles.
-              </p>
+            <div className="relative h-64 w-full overflow-hidden rounded-[32px] border border-white/30 bg-slate-900 lg:h-72">
+              <Image src="/images/geo31.jpeg" alt="Heavy machinery fleet" fill className="object-cover" />
             </div>
-
-            <div className="mb-4">
-              <p className="font-bold text-gray-900 dark:text-white">Customer Base</p>
-              <p className="text-gray-900 dark:text-gray-300">
-                Contractors, builders, municipalities, and other public and private entities.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold text-gray-900 dark:text-white">Logistics</p>
-              <p className="text-gray-900 dark:text-gray-300">
-                Transport, setup, and maintenance services may be included.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold text-gray-900 dark:text-white">Financial Considerations</p>
-              <p className="text-gray-900 dark:text-gray-300">
-                Rental rates, purchase prices, financing options, and resale values are factors.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <p className="font-bold text-gray-900 dark:text-white">Partnership</p>
-              <p className="text-gray-900 dark:text-gray-300">
-                We partner with companies who provide construction equipment irrespective of the quantities with the possibility of short or long-term payment.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Product grid */}
-        <section aria-labelledby="products-heading" className="mt-8">
-          <h2 id="products-heading" className="sr-only">
-            Products
-          </h2>
-
-          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-            {products1.map((product) => (
-              <a key={product.id} href={product.href} className="group">
-                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                  <Image
-                    className="h-full w-full object-cover object-center group-hover:opacity-75"
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    width={512}
-                    height={1}
-                  />
-                </div>
-                <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 dark:text-white">
-                  <h3>{product.name}</h3>
-                  <p>{product.price}</p>
-                </div>
-                <p className="mt-1 text-sm italic text-gray-500 dark:text-gray-400">
-                  {product.description}
-                </p>
-              </a>
-            ))}
           </div>
         </section>
 
-        <section
-          aria-labelledby="more-products-heading"
-          className="mt-16 pb-24"
-        >
-          <h2 id="more-products-heading" className="sr-only">
-            More products
-          </h2>
+        <section className="px-6 pb-16">
+          <div className="mx-auto max-w-6xl space-y-6">
+            <h2 className="text-3xl font-semibold text-white">Featured Fleet</h2>
+            <p className="text-sm text-white/70">
+              Whether you rent for groundbreaking preparation or buy for an ongoing project, each machine is calibrated, insured, and ready for rails, roads, or runways.
+            </p>
 
-          <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-            {products2.map((product) => (
-              <a key={product.id} href={product.href} className="group">
-                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
-                  <Image
-                    className="h-full w-full object-cover object-center group-hover:opacity-75"
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    width={512}
-                    height={1}
-                  />
-                </div>
-                <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 dark:text-white">
-                  <h3>{product.name}</h3>
-                  <p>{product.price}</p>
-                </div>
-                <p className="mt-1 text-sm italic text-gray-500 dark:text-gray-400">
-                  {product.description}
-                </p>
-              </a>
-            ))}
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+              {equipmentAssets.map((asset) => (
+                <article
+                  key={asset.name}
+                  className="flex flex-col gap-3 rounded-3xl border border-white/10 bg-white/5 p-4 text-sm text-white shadow-2xl shadow-black/60"
+                >
+                  <div className="relative h-36 overflow-hidden rounded-2xl border border-white/20 bg-white/10">
+                    <Image src={asset.image} alt={asset.name} fill className="object-cover" />
+                  </div>
+                  <h3 className="text-lg font-semibold">{asset.name}</h3>
+                  <p className="text-xs uppercase tracking-[0.4em] text-white/60">{asset.price}</p>
+                  <p className="text-xs text-white/60">{asset.duration}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 pb-20">
+          <div className="mx-auto max-w-6xl space-y-6 rounded-[32px] border border-white/20 bg-white/5 p-6 shadow-2xl shadow-black/60">
+            <h3 className="text-2xl font-semibold text-white">Rental + Sales Process</h3>
+            <div className="grid gap-6 md:grid-cols-3">
+              {faq.map((item) => (
+                <article key={item.label} className="rounded-3xl border border-white/10 bg-white/10 p-4 text-sm text-white/80">
+                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/50">{item.label}</p>
+                  <p className="mt-3 text-sm text-white">{item.body}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
       </div>
-    </main>
-  </div>
-</div>
-
     </>
   );
 }

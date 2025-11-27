@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Real Estate Development, Public Work Equipment & Geomatics",
+    "subtitle": "Delivering multi-disciplinary consulting services that pair high-precision GNSS/geodetic surveying with turnkey equipment rental, contracts, negotiation, and topographic studies for Cameroon’s infrastructure programs.",
+    "highlights": "Precision GNSS/geodetic control networks.|Premium equipment rental & project delivery.|Contracts, negotiation, and surveying leadership.",
+    "location": {
+      "label": "Location",
+      "value": "Yaoundé, Cameroon"
+    },
+    "call": {
+      "label": "Call",
+      "numbers": "677 355 166|659 796 533|673 521 060"
+    },
+    "contact": {
+      "label": "WhatsApp / Email",
+      "whatsapp": "677 355 166 / 697 204 969|+49 176 597 29775 / 690 462 359"
+    }
+  },
+  "services": {
+    "realEstate": {
+      "title": "Real Estate Advisory",
+      "description": "Premium project development, site selection studies, feasibility reports, and marketing support across residential, commercial, and mixed-use assets.",
+      "badge": "Planning + Delivery"
+    },
+    "equipment": {
+      "title": "Equipment Rental & Sales",
+      "description": "Heavy machinery rental (bulldozers, graders, compactors) plus acquisition strategies that blend short- and long-term pricing.",
+      "badge": "Public Works Fleet"
+    },
+    "contracts": {
+      "title": "Contracts & Negotiations",
+      "description": "Drafting, reviewing, and executing agreements that cover land acquisition, equipment procurement, and procurement compliance.",
+      "badge": "Risk Mitigation"
+    },
+    "trade": {
+      "title": "Negotiation & General Trade",
+      "description": "Strategic negotiation support for real estate deals, government partnerships, and procurement of materials and services.",
+      "badge": "Government Liaison"
+    },
+    "studies": {
+      "title": "Topographic & Survey Studies",
+      "description": "GNSS geodesy, drone photogrammetry, cadastral surveys, and terrain modeling for infrastructure and land administration.",
+      "badge": "Spatial Intelligence"
+    },
+    "label": "Our Services",
+    "heading": "Comprehensive solutions for real estate, equipment, and geospatial programs",
+    "subheading": "From precision mapping and cadastral control to rental fleets and contracts, Geo-Equipment Consultant delivers end-to-end support for development, infrastructure, and land administration with Cameroonian expertise.",
+    "explore": "Explore →"
+  },
+  "about": {
+    "story": "Established in 2014 by Ayongaba Francois Agwenam, Geo-Equipment Consultant blends engineering precision with commercial insight. We provide geodetic GNSS programs, drone photogrammetry, cadastral services, and construction-equipment rentals so public works and private developments can advance on time and with confidence.",
+    "credentials": "Credentials",
+    "highlights": "Precision GNSS/geodetic control networks for large infrastructure.|Drone photogrammetry that unlocks 3D terrain analysis and cadastral clarity.|Negotiation, contracts, and general trade services that keep procurement compliant.",
+    "mission": "Lead Cameroon’s surveying, cadastral, and infrastructure programs with smart contracts, dependable geodesy, and responsive support that inspires trust across public and private stakeholders.",
+    "presence": "A dedicated 17-person team of surveyors, engineers, negotiators, and administrators coordinates nationwide projects, ensuring compliance with government standards and topographic accuracy."
+  },
+  "team": {
+    "title": "17 specialists ready to deliver 24/7",
+    "description": "A multi-disciplinary team of geodetic engineers, surveyors, negotiators, and project planners who keep public projects moving on time and on budget with culture, care, and accountability.",
+    "contactTitle": "Contact",
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "phoneNumbers": "677 355 166|659 796 533|673 521 060",
+    "whatsappNumbers": "677 355 166|697 204 969|+49 176 597 29775|690 462 359"
+  },
+  "project": {
+    "label": "Projects & Deliverables",
+    "heading": "Infrastructure surveys, road clearing, and site planning from start to finish",
+    "subheading": "Our portfolio spans GNSS geodetic control, tunneling, land clearing, and cart drafting for complex developments across Cameroon.",
+    "status": {
+      "ongoing": "On-going",
+      "completed": "Completed"
+    }
+  }
+}
