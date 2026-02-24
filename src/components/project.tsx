@@ -1,7 +1,7 @@
-import { Card } from "flowbite-react";
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 import { useTranslations } from "next-intl";
 
@@ -11,83 +11,40 @@ import "swiper/css/pagination";
 
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
-const projectList = [
-  {
-    imageSrc: "/images/geo55.jpeg",
-    title: "LAND SURVEY",
-    description: "the process of measuring and mapping out the position, dimensions, and boundaries of a piece of land.",
-    href: "#",
-  },
-  {
-    imageSrc: "/images/geo68.jpeg",
-    title: "SITE PLAN",
-    description: "Detailed layout of a building floor with residential units and common areas.",
-    href: "#",
-  },
-  {
-    imageSrc: "/images/geo27.jpeg",
-    title: "TURNEL CONSTRUCTION",
-   description: "Building turnels which are underground passages used for transportation and mining ",
-    href: "#",
-  },
-  {
-    imageSrc: "/images/geo63.jpeg",
-    title: "SITE PLAN",
-    description: "Larger layout of a residential development with housing units and open spaces.",
-    href: "#",
-  },
-  {
-    imageSrc: "/images/geo50.jpeg",
-    title: "LAND CLEARING",
-    description: "prepare the land for construction by  removing trees, stumps, brush, rocks, and other obstacles from a piece of land.",
-    href: "#",
-  },
-  {
-    imageSrc: "/images/geo29.jpeg",
-    title: "ROAD CLEARING",
-    description: "prepare the road for construction by  removing trees, stumps, brush, rocks, and other obstacles",
-    href: "#",
-  },
-  {
-    imageSrc: "/images/geo19.jpeg",
-    title: "CART DRAFTING",
-    description: "Creating detailed drawings or maps based on the survey data,Creating detailed drawings or maps based on the survey data,this is crucial for architects",
-    href: "#",
-  },
-  {
-    imageSrc: "/images/geo71.jpeg",
-    title: "SITE PLAN",
-    description: " Larger layout of a residential development with housing units and open spaces.",
-    href: "#",
-  },
-  {
-    imageSrc: "/images/geo72.jpeg",
-    title: "SITE PLAN",
-    description: "Detailed layout of a building floor with residential units and common areas.",
-    href: "#",
-  },
+const projectImages = [
+  "/images/geo55.jpeg",
+  "/images/geo68.jpeg",
+  "/images/geo27.jpeg",
+  "/images/geo63.jpeg",
+  "/images/geo50.jpeg",
+  "/images/geo29.jpeg",
+  "/images/geo19.jpeg",
+  "/images/geo71.jpeg",
+  "/images/geo72.jpeg",
 ];
-
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const Project = () => {
   const t = useTranslations("project");
+  const projectItems = t.raw("items") as Array<{
+    title: string;
+    description: string;
+    status: "ongoing" | "completed";
+  }>;
   return (
     <section
       id="projects"
-      className="bg-gradient-to-br from-brand-900 via-brand-900 to-brand-800 py-16 text-white"
+      data-reveal
+      className="reveal bg-gradient-to-br from-brand-900 via-brand-900 to-brand-800 py-20 text-white"
     >
       <div className="mx-auto max-w-6xl space-y-10 px-6">
         <div className="space-y-4 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.6em] text-cyan-300">
+          <p className="text-xs font-semibold uppercase tracking-[0.6em] text-accent/80">
             {t("label")}
           </p>
-          <h2 className="text-4xl font-semibold text-white sm:text-5xl">
+          <h2 className="text-5xl font-semibold text-white sm:text-6xl">
             {t("heading")}
           </h2>
-          <p className="text-sm text-white/70">{t("subheading")}</p>
+          <p className="text-base font-medium text-white/70">{t("subheading")}</p>
         </div>
 
         <div className="relative rounded-[32px] border border-white/20 bg-slate-950 p-6 shadow-[0_30px_80px_rgba(2,6,23,0.9)]">
@@ -96,34 +53,46 @@ const Project = () => {
             grabCursor
             centeredSlides
             slidesPerView={"auto"}
+            loop
+            speed={900}
             autoplay={{
-              delay: 2500,
+              delay: 2600,
               disableOnInteraction: false,
             }}
             coverflowEffect={{
-              rotate: 40,
+              rotate: 18,
               stretch: 0,
-              depth: 120,
+              depth: 90,
               modifier: 1,
-              slideShadows: true,
+              slideShadows: false,
             }}
             pagination
             modules={[EffectCoverflow, Pagination, Autoplay]}
             className="mySwiper"
           >
-            {projectList.map((item) => (
-              <SwiperSlide key={item.imageSrc}>
-                <Card
-                  className="max-w-sm bg-slate-900/80"
-                  imgAlt={item.title}
-                  imgSrc={item.imageSrc}
-                >
-                  <h5 className="text-2xl font-semibold leading-tight text-white">{item.title}</h5>
-                  <p className="mt-2 text-sm text-white/80">{item.description}</p>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.4em] text-white/60">
-                  {item.href === "#" ? t("status.ongoing") : t("status.completed")}
-                  </p>
-                </Card>
+            {projectItems.map((item, index) => (
+              <SwiperSlide key={`${item.title}-${index}`}>
+                <article className="group overflow-hidden rounded-3xl border border-white/10 bg-slate-950/90 shadow-[0_30px_70px_rgba(2,6,23,0.65)] transition duration-300 hover:-translate-y-1 hover:border-accent/50">
+                  <div className="relative h-60 w-full overflow-hidden">
+                    <Image
+                      src={projectImages[index] ?? projectImages[0]}
+                      alt={item.title}
+                      fill
+                      className="object-cover object-[center_20%] transition duration-300 group-hover:scale-[1.03]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
+                  </div>
+                  <div className="space-y-3 p-5 text-left">
+                    <p className="text-xs font-semibold uppercase tracking-[0.4em] text-accent/80">
+                      {t("label")}
+                    </p>
+                    <h5 className="text-2xl font-semibold leading-tight text-white">{item.title}</h5>
+                    <p className="text-base text-white/75">{item.description}</p>
+                    <span className="inline-flex rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
+                      {item.status === "completed" ? t("status.completed") : t("status.ongoing")}
+                    </span>
+                  </div>
+                </article>
               </SwiperSlide>
             ))}
           </Swiper>

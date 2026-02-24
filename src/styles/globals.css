@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,12 +24,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* scroll bar mozilla chrome etc. */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #3072ff #ffffff;
+  scrollbar-color: #c9a86a #0f1624;
 }
 
 *::-webkit-scrollbar {
@@ -38,37 +39,57 @@
 }
 *::-webkit-scrollbar-track {
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #0f1624;
 }
 
 *::-webkit-scrollbar-track:hover {
-  background-color: #ffffff;
+  background-color: #0f1624;
 }
 
 *::-webkit-scrollbar-track:active {
-  background-color: #ffffff;
+  background-color: #0f1624;
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background-color: #3072ff;
+  background-color: #c9a86a;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #3072ff;
+  background-color: #d6b77a;
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #3072ff;
+  background-color: #d6b77a;
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Space Grotesk', 'Poppins', sans-serif;
+  font-family: var(--font-body);
   scroll-behavior: smooth;
-  background: linear-gradient(145deg, #030b17 0%, #091b39 45%, #0f3c74 100%);
+  background: radial-gradient(circle at 20% 20%, rgba(201, 168, 106, 0.08), transparent 45%),
+    linear-gradient(160deg, #0a1018 0%, #0f1b2d 55%, #142841 100%);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --font-display: 'Space Grotesk', 'IBM Plex Sans', sans-serif;
+  --font-body: 'IBM Plex Sans', 'Space Grotesk', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+section[id] {
+  scroll-margin-top: 96px;
 }
 
 a {
@@ -76,6 +97,25 @@ a {
   text-decoration: none;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+  will-change: transform, opacity;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
 
 .swiper {
   width: 100%;
@@ -86,7 +126,7 @@ a {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 500px !important;
+  width: clamp(260px, 78vw, 420px) !important;
   height: 100%;
 }
 

@@ -135,8 +135,8 @@ const Tabs = () => {
             key={idx}
             className={`${
               idx === activeTabIndex
-                ? 'border-b-2 border-orange-500 text-orange-500 '
-                : 'text-gray-500 hover:text-gray-700 dark:text-white dark:hover:text-gray-500'
+                ? 'border-b-2 border-accent text-accent '
+                : 'text-white/60 hover:text-white'
             } px-2 font-normal py-4 sm:px-6 sm:font-medium focus:outline-none ${
               idx === 3 && 'hidden sm:flex'
             }`}

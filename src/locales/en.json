@@ -1,8 +1,26 @@
 {
+  "seo": {
+    "title": "Geo-Equipment Consultant | Land, Real Estate & Geomatics",
+    "description": "Empowering communities by transforming land knowledge into security, opportunity, and generational wealth. Geo-Equipment Consultant delivers real-estate development, GNSS/geodetic surveying, and construction-equipment rental across Cameroon.",
+    "ogTitle": "Geo-Equipment Consultant",
+    "ogDescription": "Empowering communities by transforming land knowledge into security, opportunity, and generational wealth.",
+    "keywords": "Geo-Equipment Consultant, land administration, real estate, GNSS geodesy, cadastral surveying, drone photogrammetry, construction equipment rental, Cameroon"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "contact": "Contact",
+    "projects": "Projects",
+    "home": "Home"
+  },
   "hero": {
     "title": "Real Estate Development, Public Work Equipment & Geomatics",
     "subtitle": "Delivering multi-disciplinary consulting services that pair high-precision GNSS/geodetic surveying with turnkey equipment rental, contracts, negotiation, and topographic studies for Cameroon’s infrastructure programs.",
+    "tagline": "Empowering communities by transforming land knowledge into security, opportunity, and generational wealth.",
     "highlights": "Precision GNSS/geodetic control networks.|Premium equipment rental & project delivery.|Contracts, negotiation, and surveying leadership.",
+    "ctaPrimary": "Explore Services",
+    "ctaSecondary": "Book a Call",
     "location": {
       "label": "Location",
       "value": "Yaoundé, Cameroon"
@@ -48,15 +66,42 @@
     "explore": "Explore →"
   },
   "about": {
+    "storyLabel": "Our Story",
     "story": "Established in 2014 by Ayongaba Francois Agwenam, Geo-Equipment Consultant blends engineering precision with commercial insight. We provide geodetic GNSS programs, drone photogrammetry, cadastral services, and construction-equipment rentals so public works and private developments can advance on time and with confidence.",
     "credentials": "Credentials",
+    "credentialsItems": "Registered: RC.BDA.2014A.179|Taxpayer: M041412440255R|Yaoundé HQ, serving national infrastructure programs",
+    "partnersLabel": "Why partners choose us",
     "highlights": "Precision GNSS/geodetic control networks for large infrastructure.|Drone photogrammetry that unlocks 3D terrain analysis and cadastral clarity.|Negotiation, contracts, and general trade services that keep procurement compliant.",
+    "contactLabel": "Contact",
+    "contactLine1": "B.P. 916 Yaoundé — +237 677 355 166",
+    "contactLine2": "Available 24/7 for online/offline consultations (Sat until 13:30)",
+    "missionLabel": "Mission",
+    "missionMeta": "Est. 2014",
     "mission": "Lead Cameroon’s surveying, cadastral, and infrastructure programs with smart contracts, dependable geodesy, and responsive support that inspires trust across public and private stakeholders.",
-    "presence": "A dedicated 17-person team of surveyors, engineers, negotiators, and administrators coordinates nationwide projects, ensuring compliance with government standards and topographic accuracy."
+    "missionTags": "Precision GNSS|Drone & Terrain|Contracts & Procurement",
+    "presenceLabel": "Presence",
+    "presenceMeta": "Yaoundé + Regions",
+    "presence": "A dedicated 17-person team of surveyors, engineers, negotiators, and administrators coordinates nationwide projects, ensuring compliance with government standards and topographic accuracy.",
+    "presenceBankLabel": "Corporate Bank Accounts:",
+    "presenceBanks": "Afriland First Bank: 06489961001|CCC Bank: 37211933402|Ecobank: 0222845401"
   },
   "team": {
+    "sectionLabel": "Expert Team",
     "title": "17 specialists ready to deliver 24/7",
     "description": "A multi-disciplinary team of geodetic engineers, surveyors, negotiators, and project planners who keep public projects moving on time and on budget with culture, care, and accountability.",
+    "leaders": [
+      {
+        "name": "Mr AYONGABA Francios AGWENAM",
+        "role": "Founder & CEO",
+        "description": "Civil engineer with ten years of experience leading multimillion-dollar infrastructure and land-development programs in Cameroon."
+      },
+      {
+        "name": "Mr GUELA LIENOU Maurice",
+        "role": "Deputy General Administrator",
+        "description": "Geospatial project manager who coordinates GNSS campaigns, photogrammetry missions, and government partnerships."
+      }
+    ],
+    "tags": "Strategic Planning|Public Procurement|Geospatial Integrity",
     "contactTitle": "Contact",
     "phoneLabel": "Phone",
     "whatsappLabel": "WhatsApp",
@@ -70,6 +115,101 @@
     "status": {
       "ongoing": "On-going",
       "completed": "Completed"
+    },
+    "items": [
+      {
+        "title": "LAND SURVEY",
+        "description": "Measuring and mapping the position, dimensions, and boundaries of a parcel.",
+        "status": "ongoing"
+      },
+      {
+        "title": "SITE PLAN",
+        "description": "Detailed layout of a building floor with residential units and common areas.",
+        "status": "ongoing"
+      },
+      {
+        "title": "TUNNEL CONSTRUCTION",
+        "description": "Building underground passages used for transportation and mining.",
+        "status": "ongoing"
+      },
+      {
+        "title": "SITE PLAN",
+        "description": "Large-scale layout of a residential development with housing units and open spaces.",
+        "status": "ongoing"
+      },
+      {
+        "title": "LAND CLEARING",
+        "description": "Preparing sites by removing trees, stumps, brush, rocks, and obstacles.",
+        "status": "ongoing"
+      },
+      {
+        "title": "ROAD CLEARING",
+        "description": "Preparing road corridors by removing trees, stumps, brush, rocks, and obstacles.",
+        "status": "ongoing"
+      },
+      {
+        "title": "CART DRAFTING",
+        "description": "Creating detailed drawings or maps from survey data for architects and engineers.",
+        "status": "ongoing"
+      },
+      {
+        "title": "SITE PLAN",
+        "description": "Residential layout planning for neighborhoods with shared amenities.",
+        "status": "ongoing"
+      },
+      {
+        "title": "SITE PLAN",
+        "description": "Interior floor layout with units, circulation, and common spaces.",
+        "status": "ongoing"
+      }
+    ]
+  },
+  "form": {
+    "sectionLabel": "Contact",
+    "title": "Let's build what matters",
+    "description": "Tell us about your next project, site requirement, or equipment need. Our geomatics experts respond within one business day.",
+    "officeHoursLabel": "Office Hours",
+    "officeHoursValue": "Mon–Fri: 08:30–17:30 | Sat: 08:30–13:30 (Yaoundé)",
+    "phoneLabel": "Phone",
+    "phoneValue": "677355166 / 659796533 / 673521060",
+    "whatsappLabel": "WhatsApp",
+    "whatsappValue": "677355166 / 697204969 / +4917659729775 / 690462359",
+    "emailLabel": "Email",
+    "emailValue": "constrctr@restate.com",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message"
+    },
+    "placeholders": {
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Tell us about your project or equipment requirement"
+    },
+    "submit": "Send Request",
+    "submitting": "Sending…",
+    "toast": {
+      "success": "Form submitted successfully!",
+      "error": "Unable to submit. Try again shortly."
+    },
+    "errors": {
+      "required": "Required",
+      "firstName": "First name is required",
+      "lastName": "Last name is required",
+      "emailRequired": "Email is required",
+      "emailFormat": "Invalid email",
+      "phoneRequired": "Phone number is required",
+      "phoneFormat": "Invalid phone number, please enter numbers only",
+      "message": "Message is required"
     }
+  },
+  "footer": {
+    "brand": "Geo-Equipment Consultant",
+    "headline": "Precision surveying & development",
+    "description": "GNSS geodesy, drone photogrammetry, public works equipment, and contract advisory for Cameroon and beyond.",
+    "designCredit": "Design by Kassandrale Mognitou",
+    "designLabel": "Website Design"
   }
 }

@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import LanguageSwitcher from "./languageSwitcher";
 import ThemeChanger from "./themeChanger";
-import { Span } from "next/dist/trace";
 import { useRouter } from 'next/router';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
+import { useTranslations } from "next-intl";
 
 const Header = () => {
   const [header, setHeader] = useState(false);
@@ -14,6 +14,7 @@ const Header = () => {
   const [headerText, setHeaderText] = useState('white');
 
   const router = useRouter();
+  const t = useTranslations("nav");
 
   const handleHeader = () => {
     setHeader(!header);
@@ -24,9 +25,17 @@ const Header = () => {
   };
 
   useEffect(() => {
+    if (typeof document === "undefined") return;
+    document.body.style.overflow = header ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [header]);
+
+  useEffect(() => {
     const handleColorChange = () => {
       if (window.scrollY >= 250) {
-        setHeaderColor('linear-gradient(to right, #020024, #093679, #00d4ff)');
+        setHeaderColor('linear-gradient(to right, #0f1624, #14233a, #1b2d4a)');
         setHeaderText('#ffffff');
       } else {
         setHeaderColor('transparent');
@@ -39,7 +48,7 @@ const Header = () => {
   return (
     <div
       style={{ background: `${headerColor}` }}
-      className=" backdrop-blur-xl bg-lime-950/100 fixed top-0 left-0 w-full h-20 shadow-xl flex justify-between items-center z-40 ease-in duration-300"
+      className="backdrop-blur-xl bg-brand-900/95 fixed top-0 left-0 w-full h-20 border-b border-white/5 shadow-xl flex justify-between items-center z-40 ease-in duration-300"
     >
       {/* Menu + Name */}
 
@@ -56,7 +65,7 @@ const Header = () => {
     <div className="ml-2"> {/* Wrapper for the title and subtitle */}
       <h1
         style={{ color: `${headerText}` }}
-        className="py-2 text-2xl font-bold hover:text-orange-500"
+        className="py-2 text-2xl font-bold hover:text-accent"
       >
         Geo-Equipment  
         <br/>
@@ -77,20 +86,20 @@ const Header = () => {
         className="text-sm font-bold hidden sm:flex
       "
       >
-        <li className=" p-4 hover:text-orange-500 text-lg">
-          <Link href="#about-container">About</Link>
+        <li className=" p-4 hover:text-accent text-lg">
+          <Link href="#about-container">{t("about")}</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500 text-lg">
-          <Link href="#services">Services</Link>
+        <li className=" p-4 hover:text-accent text-lg">
+          <Link href="#services">{t("services")}</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500 text-lg">
-          <Link href="#team">Team</Link>
+        <li className=" p-4 hover:text-accent text-lg">
+          <Link href="#team">{t("team")}</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500 text-lg">
-          <Link href="#contact">Contact</Link>
+        <li className=" p-4 hover:text-accent text-lg">
+          <Link href="#contact">{t("contact")}</Link>
         </li>
-        <li className=" p-4 hover:text-orange-500 text-lg">
-          <Link href="#projects">Projects</Link>
+        <li className=" p-4 hover:text-accent text-lg">
+          <Link href="#projects">{t("projects")}</Link>
         </li>
       </ul>) : (
         <ul
@@ -98,8 +107,8 @@ const Header = () => {
         className="text-sm font-bold hidden sm:flex
       "
       >
-        <li className=" p-4 hover:text-orange-500 text-lg">
-          <Link href="/">Home</Link>
+        <li className=" p-4 hover:text-accent text-lg">
+          <Link href="/">{t("home")}</Link>
         </li>
         
       </ul>
@@ -124,31 +133,51 @@ const Header = () => {
       <div
         className={
           header
-            ? "sm:hidden fixed inset-0 flex flex-col justify-center items-center bg-gradient-to-br from-black/90 via-black/80 to-slate-900/90 backdrop-blur-[30px] text-center transition duration-300"
-            : "sm:hidden fixed inset-0 flex flex-col justify-center items-center bg-gradient-to-br from-black/0 via-black/0 to-black/0 backdrop-blur-[30px] opacity-0 pointer-events-none transition duration-300"
+            ? "sm:hidden fixed inset-0 z-50 flex min-h-dvh flex-col bg-slate-950 text-center transition duration-300 isolate"
+            : "sm:hidden fixed inset-0 z-50 flex min-h-dvh flex-col bg-slate-950 text-center opacity-0 pointer-events-none transition duration-300 isolate"
         }
       >
-        <div className="absolute inset-0 bg-black/80" aria-hidden />
-        <div className="relative flex h-full w-full flex-col items-center justify-center gap-6">
-          <ul className="flex h-full w-full flex-col items-center justify-center gap-8 text-3xl font-semibold tracking-[0.35em] text-white">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(201,168,106,0.08),_transparent_55%)]" aria-hidden />
+        <div className="relative mx-auto flex min-h-dvh w-full max-w-sm flex-col overflow-y-auto overscroll-contain px-6 pb-10 pt-6 text-left">
+          <div className="flex items-center justify-between">
+            <div className="space-y-1">
+              <p className="text-xs font-semibold uppercase tracking-[0.5em] text-accent/80">Menu</p>
+              <p className="text-2xl font-semibold text-white">Navigate</p>
+            </div>
+            <button
+              onClick={handleMobileHeader}
+              aria-label="Close menu"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-accent/40 hover:text-accent"
+            >
+              <AiOutlineClose size={20} />
+            </button>
+          </div>
+
+          <nav className="mt-8 flex flex-col gap-3 text-base">
             {[
-              { label: "About", target: "#about-container" },
-              { label: "Services", target: "#services" },
-              { label: "Team", target: "#team" },
-              { label: "Projects", target: "#projects" },
-              { label: "Contact", target: "#contact" },
+              { label: t("about"), target: "#about-container" },
+              { label: t("services"), target: "#services" },
+              { label: t("team"), target: "#team" },
+              { label: t("projects"), target: "#projects" },
+              { label: t("contact"), target: "#contact" },
             ].map((link) => (
-              <li key={link.label} className="w-full">
-                <Link
-                  href={link.target}
-                  onClick={handleMobileHeader}
-                  className="block w-full rounded-2xl bg-white/10 px-6 py-4 text-center text-lg uppercase tracking-[0.4em] transition hover:bg-white/20"
-                >
-                  {link.label}
-                </Link>
-              </li>
+              <Link
+                key={link.label}
+                href={link.target}
+                onClick={handleMobileHeader}
+                className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-lg font-semibold text-white/90 transition hover:border-accent/40 hover:bg-white/10"
+              >
+                {link.label}
+                <span className="text-accent">→</span>
+              </Link>
             ))}
-          </ul>
+          </nav>
+
+          <div className="mt-auto rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-white/70">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/50">Quick Contact</p>
+            <p className="mt-2 text-base font-semibold text-white">+237 677 355 166</p>
+            <p className="text-sm text-white/60">constrctr@restate.com</p>
+          </div>
         </div>
       </div>
     </div>

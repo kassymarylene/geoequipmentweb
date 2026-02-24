@@ -6,30 +6,44 @@ import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Project from "@/components/project";
 import ProfessionalProfile from "@/components/professionalProfile";
-import { NextSeo } from "next-seo";
+import { NextSeo, OrganizationJsonLd } from "next-seo";
+import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
 
 const HomePage = () => {
+  const seo = useTranslations("seo");
+  const { locale } = useRouter();
+  const baseUrl = "https://www.geoequipcam.com";
+  const canonicalUrl = locale && locale !== "en" ? `${baseUrl}/${locale}` : baseUrl;
   return (
     <>
       <NextSeo
-        title="Geo-Consultancy Real Estate & Geomatics Expertise"
-        description="GEO-EQUIPMENT CONSULTANT delivers real-estate development, construction-equipment rental, and geospatial surveying services—ranging from contracts and negotiations to topographic studies, cadastral control, and GNSS/geodetic expertise for public infrastructure."
+        title={seo("title")}
+        description={seo("description")}
         openGraph={{
           type: "website",
-          url: "https://www.geoequipcam.com",
-          title: "Geo-Consultancy Real Estate",
-          description:
-            "Promoteur immobilier, Location des engins matériel de construction, Matériel de génie civil, Études, Contrats, Négociation et Commerce général",
+          url: canonicalUrl,
+          title: seo("ogTitle"),
+          description: seo("ogDescription"),
+          locale: locale ?? "en",
           images: [
             {
-              url: "https://www.geoequipcam.com",
-              width: 800,
-              height: 600,
-              alt: "Og Image Alt",
+              url: "https://www.geoequipcam.com/geologo4.jpeg",
+              width: 1200,
+              height: 630,
+              alt: "Geo-Equipment Consultant",
             },
           ],
-          site_name: "Geo-Equipment Consultant",
+          site_name: seo("ogTitle"),
         }}
+        twitter={{
+          cardType: "summary_large_image",
+        }}
+        languageAlternates={[
+          { hrefLang: "en", href: baseUrl },
+          { hrefLang: "fr", href: `${baseUrl}/fr` },
+          { hrefLang: "x-default", href: baseUrl },
+        ]}
         additionalMetaTags={[
           {
             name: "viewport",
@@ -37,11 +51,37 @@ const HomePage = () => {
           },
           {
             name: "keywords",
-            content:
-              "Geo-Equipment Consultant, real estate, heavy equipment rental, GNSS geodesy, drone photogrammetry, cadastral surveying, infrastructure mapping",
+            content: seo("keywords"),
+          },
+          {
+            name: "robots",
+            content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          },
+          {
+            name: "theme-color",
+            content: "#0f1624",
           },
         ]}
-        canonical="https://www.geoequipcam.com"
+        canonical={canonicalUrl}
+      />
+      <OrganizationJsonLd
+        type="Organization"
+        name="Geo-Equipment Consultant"
+        url={baseUrl}
+        logo="https://www.geoequipcam.com/geologo4.jpeg"
+        contactPoint={[
+          {
+            contactType: "customer service",
+            telephone: "+237 677 355 166",
+            email: "constrctr@restate.com",
+            areaServed: "CM",
+            availableLanguage: ["English", "French"],
+          },
+        ]}
+        address={{
+          addressLocality: "Yaoundé",
+          addressCountry: "CM",
+        }}
       />
       <div>
         <Hero

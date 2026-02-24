@@ -11,21 +11,23 @@ import * as yup from "yup";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-const schema = yup.object().shape({
-  firstName: yup.string().required("First name is required"),
-  lastName: yup.string().required("Last name is required"),
-  email: yup.string().email("Invalid email").required("Email is required"),
-  phoneNumber: yup
-    .string()
-    .matches(/^[0-9]*$/, "Invalid phone number, please enter numbers only")
-    .required("Phone number is required"),
-  message: yup.string().required("Message is required"),
-});
+import { useTranslations } from "next-intl";
 
 type FormFieldName = "firstName" | "lastName" | "email" | "phoneNumber" | "message";
 
 const Form = () => {
+  const t = useTranslations("form");
+  const schema = yup.object().shape({
+    firstName: yup.string().required(t("errors.firstName")),
+    lastName: yup.string().required(t("errors.lastName")),
+    email: yup.string().email(t("errors.emailFormat")).required(t("errors.emailRequired")),
+    phoneNumber: yup
+      .string()
+      .matches(/^[0-9]*$/, t("errors.phoneFormat"))
+      .required(t("errors.phoneRequired")),
+    message: yup.string().required(t("errors.message")),
+  });
+
   const {
     register,
     handleSubmit,
@@ -38,43 +40,43 @@ const Form = () => {
     try {
       setSubmitting(true);
       console.log(data);
-      toast.success("Form submitted successfully!");
+      toast.success(t("toast.success"));
       reset();
     } catch (error) {
       console.error(error);
-      toast.error("Unable to submit. Try again shortly.");
+      toast.error(t("toast.error"));
     } finally {
       setSubmitting(false);
     }
   };
 
   return (
-    <section id="contact" className="bg-slate-950 py-16 text-white">
+    <section id="contact" data-reveal className="reveal bg-slate-950 py-20 text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-2">
         <div className="space-y-6 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_25px_60px_rgba(15,23,42,0.8)] backdrop-blur">
-          <p className="text-xs font-semibold uppercase tracking-[0.6em] text-cyan-300">
-            Contact
+          <p className="text-xs font-semibold uppercase tracking-[0.6em] text-accent/80">
+            {t("sectionLabel")}
           </p>
-          <h2 className="text-3xl font-semibold text-white">Let&apos;s build what matters</h2>
-          <p className="text-sm text-white/70">
-            Tell us about your next project, site requirement, or equipment need. Our geomatics experts respond within one business day.
+          <h2 className="text-4xl font-semibold text-white">{t("title")}</h2>
+          <p className="text-base text-white/70">
+            {t("description")}
           </p>
           <div className="space-y-4 text-sm text-white/80">
             <div>
-              <p className="font-semibold text-white">Office Hours</p>
-              <p>Mon–Fri: 08:30–17:30 | Sat: 08:30–13:30 (Yaoundé)</p>
+              <p className="font-semibold text-accent">{t("officeHoursLabel")}</p>
+              <p>{t("officeHoursValue")}</p>
             </div>
             <div>
-              <p className="font-semibold text-white">Phone</p>
-              <p>677355166 / 659796533 / 673521060</p>
+              <p className="font-semibold text-accent">{t("phoneLabel")}</p>
+              <p className="font-medium text-white">{t("phoneValue")}</p>
             </div>
             <div>
-              <p className="font-semibold text-white">WhatsApp</p>
-              <p>677355166 / 697204969 / +4917659729775 / 690462359</p>
+              <p className="font-semibold text-accent">{t("whatsappLabel")}</p>
+              <p className="font-medium text-white">{t("whatsappValue")}</p>
             </div>
             <div>
-              <p className="font-semibold text-white">Email</p>
-              <p>constrctr@restate.com</p>
+              <p className="font-semibold text-accent">{t("emailLabel")}</p>
+              <p className="font-medium text-white">{t("emailValue")}</p>
             </div>
           </div>
         </div>
@@ -86,8 +88,8 @@ const Form = () => {
           <div className="grid gap-4 sm:grid-cols-2">
             {(
               [
-                { label: "First Name", name: "firstName" as FormFieldName, icon: usernameIcon },
-                { label: "Last Name", name: "lastName" as FormFieldName, icon: usernameIcon },
+                { label: t("fields.firstName"), name: "firstName" as FormFieldName, icon: usernameIcon },
+                { label: t("fields.lastName"), name: "lastName" as FormFieldName, icon: usernameIcon },
               ]
             ).map((field) => (
               <label key={field.name} className="relative block">
@@ -98,7 +100,7 @@ const Form = () => {
                   {...register(field.name)}
                   name={field.name}
                   placeholder={field.label}
-                  className="mt-2 w-full rounded-2xl border border-white/20 bg-slate-900/70 px-4 py-3 placeholder:text-white/30 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                  className="mt-2 w-full rounded-2xl border border-white/20 bg-slate-900/70 px-4 py-3 placeholder:text-white/30 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
                 />
                 <Image
                   src={field.icon}
@@ -106,7 +108,9 @@ const Form = () => {
                   className="pointer-events-none absolute right-4 top-12 h-5 w-5 opacity-60"
                 />
                 {errors[field.name as keyof typeof errors] && (
-                  <p className="mt-1 text-xs text-rose-400">required</p>
+                  <p className="mt-1 text-xs text-rose-400">
+                    {String(errors[field.name as keyof typeof errors]?.message ?? t("errors.required"))}
+                  </p>
                 )}
               </label>
             ))}
@@ -115,30 +119,34 @@ const Form = () => {
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="relative block">
               <span className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
-                Email
+                {t("fields.email")}
               </span>
               <input
                 {...register("email")}
                 name="email"
-                placeholder="Email Address"
-                className="mt-2 w-full rounded-2xl border border-white/20 bg-slate-900/70 px-4 py-3 placeholder:text-white/30 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                placeholder={t("placeholders.email")}
+                className="mt-2 w-full rounded-2xl border border-white/20 bg-slate-900/70 px-4 py-3 placeholder:text-white/30 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
               />
               <Image
                 src={emailIcon}
                 alt="email icon"
                 className="pointer-events-none absolute right-4 top-12 h-5 w-5 opacity-60"
               />
-              {errors.email && <p className="mt-1 text-xs text-rose-400">required</p>}
+              {errors.email && (
+                <p className="mt-1 text-xs text-rose-400">
+                  {String(errors.email?.message ?? t("errors.required"))}
+                </p>
+              )}
             </label>
             <label className="relative block">
               <span className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
-                Phone
+                {t("fields.phone")}
               </span>
               <input
                 {...register("phoneNumber")}
                 name="phoneNumber"
-                placeholder="Phone Number"
-                className="mt-2 w-full rounded-2xl border border-white/20 bg-slate-900/70 px-4 py-3 placeholder:text-white/30 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                placeholder={t("placeholders.phone")}
+                className="mt-2 w-full rounded-2xl border border-white/20 bg-slate-900/70 px-4 py-3 placeholder:text-white/30 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
               />
               <Image
                 src={callIcon}
@@ -146,21 +154,23 @@ const Form = () => {
                 className="pointer-events-none absolute right-4 top-12 h-5 w-5 opacity-60"
               />
               {errors.phoneNumber && (
-                <p className="mt-1 text-xs text-rose-400">required</p>
+                <p className="mt-1 text-xs text-rose-400">
+                  {String(errors.phoneNumber?.message ?? t("errors.required"))}
+                </p>
               )}
             </label>
           </div>
 
           <label className="relative block">
             <span className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70">
-              Message
+              {t("fields.message")}
             </span>
             <textarea
               {...register("message")}
               name="message"
-              placeholder="Tell us about your project or equipment requirement"
+              placeholder={t("placeholders.message")}
               rows={4}
-              className="mt-2 w-full rounded-2xl border border-white/20 bg-slate-900/70 px-4 py-3 placeholder:text-white/30 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+              className="mt-2 w-full rounded-2xl border border-white/20 bg-slate-900/70 px-4 py-3 placeholder:text-white/30 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
             />
             <Image
               src={messageIcon}
@@ -168,16 +178,18 @@ const Form = () => {
               className="pointer-events-none absolute right-4 top-20 h-5 w-5 opacity-60"
             />
             {errors.message && (
-              <p className="mt-1 text-xs text-rose-400">required</p>
+              <p className="mt-1 text-xs text-rose-400">
+                {String(errors.message?.message ?? t("errors.required"))}
+              </p>
             )}
           </label>
 
           <button
             type="submit"
-            className="w-full rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 py-3 text-sm font-semibold uppercase tracking-[0.4em] text-slate-950 shadow-lg shadow-cyan-500/50 transition hover:scale-[1.01]"
+            className="w-full rounded-2xl bg-accent py-3 text-sm font-semibold uppercase tracking-[0.4em] text-slate-900 shadow-lg shadow-[0_20px_60px_rgba(201,168,106,0.35)] transition hover:-translate-y-0.5 hover:brightness-110 disabled:opacity-70"
             disabled={submitting}
           >
-            {submitting ? "Sending…" : "Send Request"}
+            {submitting ? t("submitting") : t("submit")}
           </button>
           <ToastContainer position="bottom-center" autoClose={5000} hideProgressBar={false} newestOnTop closeOnClick rtl={false} draggable pauseOnHover theme="dark" />
         </form>

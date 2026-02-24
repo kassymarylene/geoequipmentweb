@@ -3,7 +3,7 @@ import eyeIcon from '../assets/icons/eye.png';
 
 const Card = ({ imageSrc, title, price }: {imageSrc:StaticImageData, title:string, price: string}) => {
   return (
-    <div className="w-[350px] h-[400px] hover:scale-105 ease-in duration-200 mx-auto bg-white rounded-xl shadow-md overflow-hidden dark:bg-slate-700">
+    <div className="w-[350px] h-[400px] hover:scale-105 ease-in duration-200 mx-auto bg-slate-950 rounded-xl shadow-md overflow-hidden border border-white/10">
       <div className="flex flex-col items-start">
         <div className="relative">
           <Image
@@ -25,16 +25,16 @@ const Card = ({ imageSrc, title, price }: {imageSrc:StaticImageData, title:strin
         </div>
 
         <div className="p-8">
-          <div className="capitalize text-cardText font-black text-[15px] leading-[30px] dark:text-white">
+          <div className="capitalize text-white font-black text-[15px] leading-[30px]">
             {title}
           </div>
-          <p className=" text-2xl leading-[30px] font-bold text-cardText py-[10px] dark:text-white ">
+          <p className=" text-2xl leading-[30px] font-bold text-accent py-[10px] ">
             {price}
           </p>
-          <p className="text-[13px] leading-[25px] text-blueCardSubTitle font-bold py-[10px]  dark:text-white">
+          <p className="text-[13px] leading-[25px] text-white/70 font-semibold py-[10px]">
             14 Patrick Brem Ct. Mahwah, NJ07430
           </p>
-          <p className="text-xs leading-5 text-blueCardSubTitle font-bold dark:text-white">
+          <p className="text-xs leading-5 text-white/60 font-semibold">
             3 Beds&nbsp;&nbsp;-&nbsp;&nbsp;2 baths&nbsp;&nbsp;-&nbsp;&nbsp;3,450
             sqft
           </p>
